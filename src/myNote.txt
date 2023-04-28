@@ -1,0 +1,5 @@
+font-family: 'Poppins', sans-serif;
+font-family: 'Syncopate', sans-serif;
+
+color : #121212
+color: f3f1f0
