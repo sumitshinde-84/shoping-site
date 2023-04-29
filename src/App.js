@@ -1,10 +1,16 @@
+import Intro from "./components/intro";
+import Loader from "./components/loader";
+
 import "./style/App.css"
 
 const App = () =>{
 
   return(
     <div className="main-container">
-        <h1>Hello world</h1>
+        <Navbar/>
+        <Intro/>
+        <Loader/>
+
     </div>
   )
 }
