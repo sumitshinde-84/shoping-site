@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from "react";
-import gsap from "gsap-trial";
-import ScrollSmoother from "gsap-trial/ScrollSmoother";
-import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
+import gsap from "gsap";
+
+import ScrollTrigger from "gsap/src/ScrollTrigger";
 
 import "./style/intro.css";
 import sneakerHome from "../images/home-sneaker.png";
 
 const Intro = () => {
   const sneakerHomeRef = useRef(null);
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+  gsap.registerPlugin(ScrollTrigger);
   const tl = gsap.timeline();
 
   useEffect(() => {

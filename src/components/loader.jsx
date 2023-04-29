@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./style/loader.css";
-import gsap from "gsap-trial";
+import gsap from "gsap";
 
 const Loader = () => {
   const lowest = useRef(null);
