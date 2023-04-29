@@ -39,7 +39,7 @@ const App = () => {
     <div ref={main} className="main-container">
       <Navbar />
       <Intro status={pageLoadStatus} />
-      {/* <Loader getPageLoadStatus={getPageLoadStatus} /> */}
+      <Loader getPageLoadStatus={getPageLoadStatus} />
       <Textreveal />
       <ImgGrid />
     </div>
