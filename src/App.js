@@ -1,6 +1,6 @@
 import Intro from "./components/intro";
 import Loader from "./components/loader";
-
+import Navbar from "./components/navBar";
 import "./style/App.css"
 
 const App = () =>{
