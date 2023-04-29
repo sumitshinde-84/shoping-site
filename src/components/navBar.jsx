@@ -1,5 +1,5 @@
 import "./style/navbar.css"
-
+import cart from "../images/cart.png"
 const Navbar = () =>{
     return(
         <nav>
@@ -14,6 +14,8 @@ const Navbar = () =>{
 
         <div className="order-sect">
         <button className="order-button">Order</button>
+        <img className="cart" src={cart} alt="cart" />
+        <div className="itemCount">0</div>
         </div>
         </nav>
     )

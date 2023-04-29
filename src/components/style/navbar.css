@@ -46,6 +46,32 @@ nav{
     left: 80px;
 }
 
+.navItems a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .navItems a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 1s ease;
+  }
+  
+  .navItems a:hover::after {
+    width: 100%;
+  }
+  
+  
+  
+
 .order-button{
     padding: 10px 16px;
     border-radius: 5px;
@@ -62,4 +88,24 @@ nav{
 .order-button:hover{
     scale: .95;
     cursor: pointer;
+}
+
+.cart {
+    width: 27px;
+    position: absolute;
+    right: -28px;
+}
+
+.itemCount{
+    background-color: var(--dark);
+    width: 14px ;
+    height: 14px ;
+    border-radius: 50%;
+    position: absolute;
+    right:-34px;
+    bottom: 17px;
+    text-align: center;
+    color: var(--light);
+    font-size: 10px;
+    font-weight: 500;
 }
