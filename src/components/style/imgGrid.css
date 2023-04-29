@@ -17,7 +17,7 @@
 
 }
 
-.imgGridSect img{
+.imgGridSect .verticle{
     width: 250px;
     height: 350px;
     border-radius: 10px;
@@ -28,11 +28,11 @@
 .imgGridSect .background-of-Img {
     width: 250px;
     height: 350px;
-    background-color: #121212ee;
+    background-color: #000000;
     border-radius: 10px;
     position: absolute;
     left: 50px;
-    top: 50px;
+    top: 90px;
 }
 
 .textcontent{
@@ -43,4 +43,13 @@
     row-gap: 50px;
     align-items: center;
     padding-top: 40px;
+}
+.horizontal  {
+    width: 180px;
+    height:110px;
+    z-index:30;
+    border-radius: 10px;
+    position: absolute;
+    left: 200px;
+    bottom: 160px;
 }
