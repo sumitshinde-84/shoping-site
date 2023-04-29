@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Loader = ({getPageLoadStatus}) => {
 
-  const [pageLoad,setPageLoad] = useState(false)
+
   const lowest = useRef(null);
   const secondLowest = useRef(null);
   const secondTop = useRef(null);
@@ -19,43 +19,43 @@ const Loader = ({getPageLoadStatus}) => {
       opacity: 1,
       y: 20,
       duration: 1,
-      ease: "power2.out", // Add a smooth easing effect
+      ease: "power2.out", 
       onComplete: () => {
         tl.to(lowest.current, {
           opacity: 0,
           y: 40,
           duration: 1,
-          ease: "power2.inOut", // Add a smooth easing effect
+          ease: "power2.inOut", 
           onComplete: () => {
             tl.to(secondLowest.current, {
               opacity: 1,
               y: 20,
               duration: 1,
-              ease: "power2.out", // Add a smooth easing effect
+              ease: "power2.out", 
               onComplete: () => {
                 tl.to(secondLowest.current, {
                   opacity: 0,
                   y: 40,
                   duration: 1,
-                  ease: "power2.inOut", // Add a smooth easing effect
+                  ease: "power2.inOut",
                   onComplete: () => {
                     tl.to(secondTop.current, {
                       opacity: 1,
                       y: 20,
                       duration: 1,
-                      ease: "power2.out", // Add a smooth easing effect
+                      ease: "power2.out", 
                       onComplete: () => {
                         tl.to(secondTop.current, {
                           opacity: 0,
                           y: 40,
                           duration: 1,
-                          ease: "power2.inOut", // Add a smooth easing effect
+                          ease: "power2.inOut", 
                           onComplete: () => {
                             tl.to(Top.current, {
                               opacity: 1,
                               y: 20,
                               duration: 1,
-                              ease: "power2.out", // Add a smooth easing effect
+                              ease: "power2.out",
                               onComplete:()=>{
                                 tl.to(main.current,{
                                   x:"100vw",

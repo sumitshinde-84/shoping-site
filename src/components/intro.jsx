@@ -26,7 +26,7 @@ const Intro = ({ status }) => {
       ease: "none",
       scrollTrigger: {
         trigger: sneakerHomeRef.current,
-        start: "top top",
+        start: "top center",
         end: "bottom top",
         scrub: true,
       },

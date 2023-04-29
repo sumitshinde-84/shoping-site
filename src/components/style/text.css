@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    border: 1px soild  red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main div{
+    color: red;
+}
