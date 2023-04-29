@@ -16,7 +16,7 @@ const Intro = () => {
       x: -1100,
       y: -20,
       rotate: -10,
-      delay: 14,
+      delay: 10,
       duration: 0.9,
     });
   }, []);
