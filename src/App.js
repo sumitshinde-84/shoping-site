@@ -4,6 +4,7 @@ import Loader from "./components/loader";
 import Navbar from "./components/navBar";
 import Intro from "./components/intro";
 import Textreveal from "./components/textreveal";
+import ImgGrid from "./components/imgGrid";
 const App = () => {
   const [pageLoadStatus,setPageLoadStatus]  = useState(false)
   const main = useRef(null);
@@ -19,6 +20,7 @@ const App = () => {
       <Intro  status={pageLoadStatus} />
       <Loader getPageLoadStatus={getPageLoadStatus} />
       <Textreveal/>
+      <ImgGrid/>
     </div>
   );
 };

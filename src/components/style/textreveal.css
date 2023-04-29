@@ -1,21 +1,19 @@
 .text-reveal {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .text-reveal p {
-    font-size: 25px;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-    font-family: 'Poppins', sans-serif;
-    width: 560px;
-    position: absolute;
-    top: 120px;
-    color: #121212;
-    
-  }
-  
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.text-reveal p {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  width: 560px;
+  position: absolute;
+  top: 120px;
+  color: #121212;
+}

@@ -1,0 +1,46 @@
+.ImgGrid{
+    width: 100vw;
+    height: 100vh;
+    font-family:'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding-right: 260px;
+}
+
+.imgGridSect{
+    height: 100%;
+    display: flex;
+    position: relative;
+    top: 50px;
+
+}
+
+.imgGridSect img{
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+}
+
+.imgGridSect .background-of-Img {
+    width: 250px;
+    height: 350px;
+    background-color: #121212ee;
+    border-radius: 10px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.textcontent{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+    padding-top: 40px;
+}
