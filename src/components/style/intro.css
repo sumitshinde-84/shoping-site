@@ -29,9 +29,9 @@
     width: 400px;
     z-index: 1;
     position: absolute;
-     right: -80vw;
-    transform: rotate(10deg);
-    top: 80px;
+    
+    transform: rotate(10deg) translateX(260%) ;
+    bottom: 260px;
     animation-duration: 2s;
     animation-name: move-rotate;
     animation-iteration-count: 1;

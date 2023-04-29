@@ -13,8 +13,8 @@ const Intro = () => {
 
   useEffect(() => {
     tl.to(sneakerHomeRef.current, {
-      x: -1200,
-      y: -20,
+      x: -90,
+      
       rotate: -10,
       delay: 14,
       duration: 0.9,
