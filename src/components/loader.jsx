@@ -1,8 +1,11 @@
 import { useEffect, useRef } from "react";
 import "./style/loader.css";
 import gsap from "gsap";
+import { useState } from "react";
 
-const Loader = () => {
+const Loader = ({getPageLoadStatus}) => {
+
+  const [pageLoad,setPageLoad] = useState(false)
   const lowest = useRef(null);
   const secondLowest = useRef(null);
   const secondTop = useRef(null);
@@ -57,7 +60,11 @@ const Loader = () => {
                                 tl.to(main.current,{
                                   x:"100vw",
                                   duration:1,
-                                  ease:"Expo.easeOut"
+                                  ease:"Expo.easeOut",
+                                  onComplete:()=>{
+                                    
+                                    getPageLoadStatus(true)
+                                  }
                                 })
                               }
                             });

@@ -1,39 +1,39 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-
-import ScrollTrigger from "gsap/src/ScrollTrigger";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 import "./style/intro.css";
 import sneakerHome from "../images/home-sneaker.png";
 
-const Intro = () => {
+const Intro = ({ status }) => {
   const sneakerHomeRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
   const tl = gsap.timeline();
 
   useEffect(() => {
-    tl.to(sneakerHomeRef.current, {
-      x: -90,
-      
-      rotate: -10,
-      delay: 14,
-      duration: 0.9,
-    });
-  }, []);
+    if (status) {
+      tl.to(sneakerHomeRef.current, {
+        x: -90,
+        rotate: -10,
+        duration: 0.9,
+      });
+    }
+  }, [status]);
 
   useEffect(() => {
-    gsap.to(sneakerHomeRef.current, {
-        xPercent: -250,
+    if (status) {
+      gsap.to(sneakerHomeRef.current, {
+        x: 0,
         ease: "none",
         scrollTrigger: {
           trigger: sneakerHomeRef.current,
           start: "top center",
           end: "bottom top",
-          scrub: true
-        }
-      })
-      
-  }, []);
+          scrub: true,
+        },
+      });
+    }
+  }, [status]);
 
   return (
     <div className="intro">
