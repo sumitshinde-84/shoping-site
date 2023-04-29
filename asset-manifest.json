@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/shoping-site/static/css/main.02a479e0.css",
+    "main.css": "/shoping-site/static/css/main.40a06c3f.css",
     "main.js": "/shoping-site/static/js/main.d025b61a.js",
     "static/media/home-sneaker.png": "/shoping-site/static/media/home-sneaker.46b6aa7da28da7da5c80.png",
     "index.html": "/shoping-site/index.html",
-    "main.02a479e0.css.map": "/shoping-site/static/css/main.02a479e0.css.map",
+    "main.40a06c3f.css.map": "/shoping-site/static/css/main.40a06c3f.css.map",
     "main.d025b61a.js.map": "/shoping-site/static/js/main.d025b61a.js.map"
   },
   "entrypoints": [
-    "static/css/main.02a479e0.css",
+    "static/css/main.40a06c3f.css",
     "static/js/main.d025b61a.js"
   ]
 }
