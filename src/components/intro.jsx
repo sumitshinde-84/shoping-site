@@ -13,10 +13,10 @@ const Intro = () => {
 
   useEffect(() => {
     tl.to(sneakerHomeRef.current, {
-      x: -1100,
+      x: -1200,
       y: -20,
       rotate: -10,
-      delay: 10,
+      delay: 14,
       duration: 0.9,
     });
   }, []);
