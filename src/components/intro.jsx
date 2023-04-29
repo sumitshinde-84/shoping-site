@@ -21,19 +21,17 @@ const Intro = ({ status }) => {
   }, [status]);
 
   useEffect(() => {
-    if (status) {
-      gsap.to(sneakerHomeRef.current, {
-        x: 0,
-        ease: "none",
-        scrollTrigger: {
-          trigger: sneakerHomeRef.current,
-          start: "top center",
-          end: "bottom top",
-          scrub: true,
-        },
-      });
-    }
-  }, [status]);
+    gsap.to(sneakerHomeRef.current, {
+      xPercent: -100,
+      ease: "none",
+      scrollTrigger: {
+        trigger: sneakerHomeRef.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+  }, []);
 
   return (
     <div className="intro">
