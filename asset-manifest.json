@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/shoping-site/static/css/main.874050f1.css",
-    "main.js": "/shoping-site/static/js/main.521347a4.js",
+    "main.css": "/shoping-site/static/css/main.a6a656f2.css",
+    "main.js": "/shoping-site/static/js/main.520b7ecf.js",
     "static/media/man.jpg": "/shoping-site/static/media/man.a2b0a440c311e50ebb35.jpg",
+    "static/media/horizontal.png": "/shoping-site/static/media/horizontal.926ceb770a03ca78e29e.png",
     "static/media/home-sneaker.png": "/shoping-site/static/media/home-sneaker.46b6aa7da28da7da5c80.png",
     "index.html": "/shoping-site/index.html",
-    "main.874050f1.css.map": "/shoping-site/static/css/main.874050f1.css.map",
-    "main.521347a4.js.map": "/shoping-site/static/js/main.521347a4.js.map"
+    "main.a6a656f2.css.map": "/shoping-site/static/css/main.a6a656f2.css.map",
+    "main.520b7ecf.js.map": "/shoping-site/static/js/main.520b7ecf.js.map"
   },
   "entrypoints": [
-    "static/css/main.874050f1.css",
-    "static/js/main.521347a4.js"
+    "static/css/main.a6a656f2.css",
+    "static/js/main.520b7ecf.js"
   ]
 }
