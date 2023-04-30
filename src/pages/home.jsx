@@ -7,6 +7,9 @@ import Textreveal from "../components/textreveal";
 import ImgGrid from "../components/imgGrid";
 import gsap from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
+import PlaneGrid from "../components/plainGrid";
+import Footer from "../components/footer";
+
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -39,10 +42,13 @@ const Home = () => {
         <div ref={main} className="main-container">
 
             <Intro status={pageLoadStatus} />
-            <Loader getPageLoadStatus={getPageLoadStatus} />
+            {/* <Loader getPageLoadStatus={getPageLoadStatus} /> */}
             <Textreveal />
             <ImgGrid />
             <ImgGridOpp/>
+            <PlaneGrid/>
+
+            {/* <Footer/> */}
         </div>
     );
 };

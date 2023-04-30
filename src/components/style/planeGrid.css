@@ -1,0 +1,65 @@
+.planeGrid{
+    width: 100vw;
+    height: 100vh;
+    font-family:'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding-right: 260px;
+    color: var(--light);
+    position: relative;
+    top: 100px;
+   
+}
+
+.planeImgSect{
+    position: relative;
+}
+
+.planeImgSect img{
+    border-radius: 10px;
+    width: 680px;
+    height: 480px;
+}
+
+#gridStyleContainer {
+    width: 300px;
+    height: 200px;
+    background: #f0efec;
+    box-shadow: 0 10px 40px #0000001a;
+    z-index: 20;
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    bottom: 280px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    color: var(--dark);
+}
+
+#gridStyleContainer p{
+    font-size: 20px;
+    font-weight: 600;
+    width: 180px;
+}
+
+.planeGridButton{
+    background-color: var(--dark);
+    width: 100px;
+    padding: 10px 4px;
+    border: none;
+    border-radius: 5px;
+    color: var(--light);
+    scale: 1;
+    transition: scale .3s ease-out;
+    cursor: pointer;
+}
+
+.planeGridButton:hover{
+    scale: .95;
+}

@@ -8,6 +8,8 @@
     gap: 70px;
     padding-right: 260px;
     color: var(--light);
+    position: relative;
+    top: 100px;
 }
 
  .imgGridOppSect{

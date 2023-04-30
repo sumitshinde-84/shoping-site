@@ -36,7 +36,7 @@ const ImgGridOpp = () => {
   }, []);
 
   return (
-    <div ref={imgGridOpp} className="ImgGrid">
+    <div ref={imgGridOpp} className="ImgGridOpp">
      
       <div className="imgGridOppSect">
         <img className="verticle" src={ImgGridImg} alt="imgGrid" />
