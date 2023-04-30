@@ -1,4 +1,4 @@
-.ImgGrid{
+.ImgGridOpp{
     width: 100vw;
     height: 100vh;
     font-family:'Poppins', sans-serif;
@@ -10,33 +10,36 @@
     color: var(--light);
 }
 
-.imgGridSect{
-    height: 100%;
+ .imgGridOppSect{
+   
+    width: 50%;
+    height: 70%;
     display: flex;
     position: relative;
-    top: 50px;
-
+    top: -100px;
+    left: 290px;
 }
 
-.imgGridSect .verticle{
+.imgGridOppSect .verticle{
     width: 250px;
     height: 350px;
     border-radius: 10px;
     position: absolute;
     z-index: 2;
+    
 }
 
-.imgGridSect .background-of-Img {
+.imgGridOppSect .background-of-Img {
     width: 250px;
     height: 350px;
-    background-color: #000000;
+    background-color: #686878;
     border-radius: 10px;
     position: absolute;
-    left: 50px;
+    left: -50px;
     top: 90px;
 }
 
-.textcontent{
+.imgGridOppSect .textcontent{
     height: 100%;
     width: 400px;
     display: flex;
@@ -45,12 +48,12 @@
     align-items: center;
     padding-top: 40px;
 }
-.horizontal  {
+ .imgGridOppSect .horizontal  {
     width: 180px;
     height:110px;
     z-index:30;
     border-radius: 10px;
     position: absolute;
-    left: 200px;
-    bottom: 160px;
+    left: -120px;
+    bottom: 0px;
 }

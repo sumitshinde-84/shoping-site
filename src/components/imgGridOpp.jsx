@@ -1,33 +1,33 @@
 import { useEffect } from "react";
-import ImgGridImg from "../images/man.jpg";
-import horizontal from "../images/horizontal.png";
+import ImgGridImg from "../images/women.jpg";
+import horizontal from "../images/horizontalLight.jpg";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import "./style/imgGrid.css";
+import "./style/imgGridOpp.css";
 import { useRef } from "react";
 
-const ImgGrid = () => {
+const ImgGridOpp = () => {
   gsap.registerPlugin(ScrollTrigger);
-  const imgGrid = useRef(null);
+  const imgGridOpp = useRef(null);
 
   useEffect(() => {
     const scrollBarSmooth = gsap.timeline({
       scrollTrigger: {
-        trigger: imgGrid.current,
+        trigger: imgGridOpp.current,
         start: "top center",
-        end: "center center",
+        end: "center end",
         scrub: true,
         onEnter: () => {
           gsap.to(document.body, {
-            color: "#f3f1f0",
-            backgroundColor: "#121212",
+            color: "#121212",
+            backgroundColor: "#7E7E8C",
             ease: "power2.out",
           });
         },
         onLeaveBack: () => {
           gsap.to(document.body, {
-            color: "#121212",
-            backgroundColor: "#f3f1f0",
+            color: "#f3f1f0",
+            backgroundColor: "#121212",
             ease: "power2.out",
           });
         },
@@ -36,7 +36,13 @@ const ImgGrid = () => {
   }, []);
 
   return (
-    <div ref={imgGrid} className="ImgGrid">
+    <div ref={imgGridOpp} className="ImgGrid">
+     
+      <div className="imgGridOppSect">
+        <img className="verticle" src={ImgGridImg} alt="imgGrid" />
+        <img className="horizontal" src={horizontal} alt="imgGrid" />
+        <div className="background-of-Img"></div>
+      </div>
       <div className="textcontent">
         <h1>Welcome to our brand new store</h1>
         <p>
@@ -46,13 +52,8 @@ const ImgGrid = () => {
           numquam omnis iste nam ut?
         </p>
       </div>
-      <div className="imgGridSect">
-        <img className="verticle" src={ImgGridImg} alt="imgGrid" />
-        <img className="horizontal" src={horizontal} alt="imgGrid" />
-        <div className="background-of-Img"></div>
-      </div>
     </div>
   );
 };
 
-export default ImgGrid;
+export default ImgGridOpp;
