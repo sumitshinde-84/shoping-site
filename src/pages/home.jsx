@@ -48,7 +48,7 @@ const Home = () => {
             <ImgGridOpp/>
             <PlaneGrid/>
 
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     );
 };
