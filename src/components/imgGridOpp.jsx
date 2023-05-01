@@ -8,12 +8,12 @@ import { useRef } from "react";
 
 const ImgGridOpp = () => {
   gsap.registerPlugin(ScrollTrigger);
-  const imgGridOpp = useRef(null);
+  const imgGridOppRef = useRef(null);
 
   useEffect(() => {
     const scrollBarSmooth = gsap.timeline({
       scrollTrigger: {
-        trigger: imgGridOpp.current,
+        trigger: imgGridOppRef.current,
         start: "top center",
         end: "center end",
         scrub: true,
@@ -33,11 +33,14 @@ const ImgGridOpp = () => {
         },
       },
     });
+
+    return () => {
+      scrollBarSmooth.scrollTrigger.kill();
+    };
   }, []);
 
   return (
-    <div ref={imgGridOpp} className="ImgGridOpp">
-     
+    <div ref={imgGridOppRef} className="ImgGridOpp">
       <div className="imgGridOppSect">
         <img className="verticle" src={ImgGridImg} alt="imgGrid" />
         <img className="horizontal" src={horizontal} alt="imgGrid" />

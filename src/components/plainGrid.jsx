@@ -7,12 +7,12 @@ import { useRef } from "react";
 
 const PlaneGrid = () => {
     gsap.registerPlugin(ScrollTrigger);
-    const PlaneGrid = useRef(null);
+    const planeGridRef = useRef(null);
 
     useEffect(() => {
         const scrollBarSmooth = gsap.timeline({
             scrollTrigger: {
-                trigger: PlaneGrid.current,
+                trigger: planeGridRef.current,
                 start: "top center",
                 end: "center end",
                 scrub: true,
@@ -32,11 +32,14 @@ const PlaneGrid = () => {
                 },
             },
         });
+
+        return () => {
+            scrollBarSmooth.scrollTrigger.kill();
+        };
     }, []);
 
     return (
-        <div  className="planeGrid" ref={PlaneGrid} >
-
+        <div className="planeGrid" ref={planeGridRef}>
             <div className="planeImgSect">
                 <img className="wideImg" src={ImgGridImg} alt="wideImg" />
 
@@ -45,9 +48,8 @@ const PlaneGrid = () => {
                     <button className="planeGridButton">to the Shop</button>
                 </div>
             </div>
-           
         </div>
     );
 };
 
-export default PlaneGrid
+export default PlaneGrid;
