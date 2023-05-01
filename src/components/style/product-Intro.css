@@ -1,0 +1,23 @@
+.product-intro {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 430px;
+  padding: 200px;
+  font-family: "Poppins", sans-serif;
+  gap: 50px;
+}
+
+.product-intro h1 {
+  font-size: 50px;
+  width: 1000px;
+  text-align: center;
+  font-weight: 560;
+}
+
+.product-intro img {
+  margin-left: 100px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}

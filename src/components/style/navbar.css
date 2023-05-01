@@ -18,12 +18,14 @@ nav{
 }
 
 
-.logo{
+ .NavLink .logo{
     
     position: absolute;
     left: 30px;
     font-size:30px ;
     font-weight: 500;
+    color: var(--dark);
+    top: 10px;
     
 }
 
@@ -46,14 +48,16 @@ nav{
     left: 80px;
 }
 
-.navItems a {
+.navItems .NavLink {
     display: flex;
     flex-direction: column;
     position: relative;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--dark);
   }
   
-  .navItems a::after {
+  .navItems .NavLink::after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -65,7 +69,7 @@ nav{
     transition: width 1s ease;
   }
   
-  .navItems a:hover::after {
+  .navItems .NavLink:hover::after {
     width: 100%;
   }
   

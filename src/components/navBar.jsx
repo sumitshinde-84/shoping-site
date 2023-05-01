@@ -1,14 +1,15 @@
 import "./style/navbar.css"
 import cart from "../images/cart.png"
+import { Link } from "react-router-dom"
 const Navbar = () =>{
     return(
         <nav>
-            <p className="logo">ronex</p>
+            <Link className="NavLink" to="/shoping-site/"><p className="logo">ronex</p></Link>
         <div className="navItems">
 
-            <a to="">Product</a>
-            <a to="">About us</a>
-            <a to="">Contact</a>
+            <Link className="NavLink" to="/Product">Product</Link>
+            <Link  className="NavLink" to="/About">About us</Link>
+            <Link  className="NavLink"to="/Contact">Contact</Link>
             
         </div>
 
