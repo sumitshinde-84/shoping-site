@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shoping-site/static/css/main.b596613c.css",
-    "main.js": "/shoping-site/static/js/main.8c2e607a.js",
+    "main.css": "/shoping-site/static/css/main.6bb3b7cd.css",
+    "main.js": "/shoping-site/static/js/main.1e732378.js",
     "static/media/video2.webm": "/shoping-site/static/media/video2.ff4df2db23c072094a6f.webm",
     "static/media/vedio1.webm": "/shoping-site/static/media/vedio1.a9dc7e1e33f4b0b78177.webm",
     "static/media/man.jpg": "/shoping-site/static/media/man.a2b0a440c311e50ebb35.jpg",
@@ -9,14 +9,15 @@
     "static/media/shoes-parts.png": "/shoping-site/static/media/shoes-parts.e62edcade8c0d43a7546.png",
     "static/media/horizontal.png": "/shoping-site/static/media/horizontal.926ceb770a03ca78e29e.png",
     "static/media/home-sneaker.png": "/shoping-site/static/media/home-sneaker.46b6aa7da28da7da5c80.png",
+    "static/media/shoes_horizontal_verticle.png": "/shoping-site/static/media/shoes_horizontal_verticle.6cbbf5e9052eb613a98b.png",
     "static/media/planeGrid.jpeg": "/shoping-site/static/media/planeGrid.0b06de798a35fa9f1c95.jpeg",
     "static/media/women.jpg": "/shoping-site/static/media/women.08ab031626d864295148.jpg",
     "index.html": "/shoping-site/index.html",
-    "main.b596613c.css.map": "/shoping-site/static/css/main.b596613c.css.map",
-    "main.8c2e607a.js.map": "/shoping-site/static/js/main.8c2e607a.js.map"
+    "main.6bb3b7cd.css.map": "/shoping-site/static/css/main.6bb3b7cd.css.map",
+    "main.1e732378.js.map": "/shoping-site/static/js/main.1e732378.js.map"
   },
   "entrypoints": [
-    "static/css/main.b596613c.css",
-    "static/js/main.8c2e607a.js"
+    "static/css/main.6bb3b7cd.css",
+    "static/js/main.1e732378.js"
   ]
 }
