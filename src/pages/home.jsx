@@ -42,7 +42,7 @@ const Home = () => {
         <div ref={main} className="main-container">
 
             <Intro status={pageLoadStatus} />
-            {/* <Loader getPageLoadStatus={getPageLoadStatus} /> */}
+            <Loader getPageLoadStatus={getPageLoadStatus} />
             <Textreveal />
             <ImgGrid />
             <ImgGridOpp/>
