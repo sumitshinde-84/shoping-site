@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shoping-site/static/css/main.6bb3b7cd.css",
+    "main.css": "/shoping-site/static/css/main.e6ee9a61.css",
     "main.js": "/shoping-site/static/js/main.1e732378.js",
     "static/media/video2.webm": "/shoping-site/static/media/video2.ff4df2db23c072094a6f.webm",
     "static/media/vedio1.webm": "/shoping-site/static/media/vedio1.a9dc7e1e33f4b0b78177.webm",
@@ -13,11 +13,11 @@
     "static/media/planeGrid.jpeg": "/shoping-site/static/media/planeGrid.0b06de798a35fa9f1c95.jpeg",
     "static/media/women.jpg": "/shoping-site/static/media/women.08ab031626d864295148.jpg",
     "index.html": "/shoping-site/index.html",
-    "main.6bb3b7cd.css.map": "/shoping-site/static/css/main.6bb3b7cd.css.map",
+    "main.e6ee9a61.css.map": "/shoping-site/static/css/main.e6ee9a61.css.map",
     "main.1e732378.js.map": "/shoping-site/static/js/main.1e732378.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bb3b7cd.css",
+    "static/css/main.e6ee9a61.css",
     "static/js/main.1e732378.js"
   ]
 }
