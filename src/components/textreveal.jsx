@@ -36,7 +36,7 @@ const TextReveal = () => {
         trigger: textRef.current,
         start: "top 90%",
         end: "center center",
-        
+
         scrub: true,
       },
     });
@@ -45,7 +45,7 @@ const TextReveal = () => {
   return (
     <div className="text-reveal">
       <p ref={textRef}>
-      We create unique and one-of-a-kind pieces that stand out from the crowd.
+        We create unique and one-of-a-kind pieces that stand out from the crowd.
         Our fashion and lifestyle products are carefully crafted with the
         highest attention to detail to ensure that each item is not just a
         product, but a work of art. Join us in our journey to redefine fashion

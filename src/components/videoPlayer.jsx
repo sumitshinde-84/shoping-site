@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from "react";
 
-import './style/VedeoPlayer.css'; // Import the CSS file for styling
+import "./style/VedeoPlayer.css"; // Import the CSS file for styling
 
 const VideoPlayer = ({ video }) => {
   const videoRef = useRef(null);
@@ -15,12 +15,12 @@ const VideoPlayer = ({ video }) => {
     };
 
     if (videoRef.current) {
-      videoRef.current.addEventListener('click', handleVideoClick);
+      videoRef.current.addEventListener("click", handleVideoClick);
     }
 
     return () => {
       if (videoRef.current) {
-        videoRef.current.removeEventListener('click', handleVideoClick);
+        videoRef.current.removeEventListener("click", handleVideoClick);
       }
     };
   }, []);

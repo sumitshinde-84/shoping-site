@@ -3,35 +3,31 @@ import "./style/loader.css";
 import gsap from "gsap";
 import { useState } from "react";
 
-const Loader = ({getPageLoadStatus}) => {
-
-
+const Loader = ({ getPageLoadStatus }) => {
   const lowest = useRef(null);
   const secondLowest = useRef(null);
   const secondTop = useRef(null);
   const Top = useRef(null);
   const tl = gsap.timeline();
-  const main = useRef(null)
+  const main = useRef(null);
   useEffect(() => {
-    
-
     tl.to(lowest.current, {
       opacity: 1,
       y: 20,
       duration: 1,
-      ease: "power2.out", 
+      ease: "power2.out",
       onComplete: () => {
         tl.to(lowest.current, {
           opacity: 0,
           y: 40,
           duration: 1,
-          ease: "power2.inOut", 
+          ease: "power2.inOut",
           onComplete: () => {
             tl.to(secondLowest.current, {
               opacity: 1,
               y: 20,
               duration: 1,
-              ease: "power2.out", 
+              ease: "power2.out",
               onComplete: () => {
                 tl.to(secondLowest.current, {
                   opacity: 0,
@@ -43,30 +39,29 @@ const Loader = ({getPageLoadStatus}) => {
                       opacity: 1,
                       y: 20,
                       duration: 1,
-                      ease: "power2.out", 
+                      ease: "power2.out",
                       onComplete: () => {
                         tl.to(secondTop.current, {
                           opacity: 0,
                           y: 40,
                           duration: 1,
-                          ease: "power2.inOut", 
+                          ease: "power2.inOut",
                           onComplete: () => {
                             tl.to(Top.current, {
                               opacity: 1,
                               y: 20,
                               duration: 1,
                               ease: "power2.out",
-                              onComplete:()=>{
-                                tl.to(main.current,{
-                                  x:"100vw",
-                                  duration:1,
-                                  ease:"Expo.easeOut",
-                                  onComplete:()=>{
-                                    
-                                    getPageLoadStatus(true)
-                                  }
-                                })
-                              }
+                              onComplete: () => {
+                                tl.to(main.current, {
+                                  x: "100vw",
+                                  duration: 1,
+                                  ease: "Expo.easeOut",
+                                  onComplete: () => {
+                                    getPageLoadStatus(true);
+                                  },
+                                });
+                              },
                             });
                           },
                         });

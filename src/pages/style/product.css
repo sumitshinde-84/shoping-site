@@ -6,63 +6,9 @@
     position :relative;
 
 }
-.videoPlyerSect{
-    
-    display: flex;
-    position: relative;
-   top: -940px;
-    align-items: center;
-    gap: 150px;
-    padding-left: 60px;
-  
-   width:100vw;
-   height: auto;
-
-}
-
-.player1{
-    width: 550px;
-    display:flex;
-    justify-content: center;
-    
-}
 
 
-
-
-
-.player1 .background-style{
-    position: relative;
-  
-    width: 490px;
-    left: -20px;
-    top: 20px;
-    height: 277px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color:#000000;;
-}
-
-.player2{
-    width: 550px;
-    display:flex;
-    justify-content: center;
-    margin-top: 180px;
-    
-}
-
-
-
-
-
-.player2 .background-style{
-    position: relative;
-  
-    width: 490px;
-    left: -20px;
-    top: 20px;
-    height: 277px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color:#000000;;
+.shoesHorizontalVerticle{
+    width: 800px;
+    margin-top: 200px;
 }
