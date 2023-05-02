@@ -4,6 +4,8 @@
   background-color: white;
   white-space: nowrap;
   display: flex;
+  margin-bottom: 190px;
+ 
 }
 
 .logos:hover .logo-slide{
