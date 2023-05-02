@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shoping-site/static/css/main.e6ee9a61.css",
-    "main.js": "/shoping-site/static/js/main.1e732378.js",
+    "main.css": "/shoping-site/static/css/main.d0553647.css",
+    "main.js": "/shoping-site/static/js/main.9ec369e6.js",
     "static/media/video2.webm": "/shoping-site/static/media/video2.ff4df2db23c072094a6f.webm",
     "static/media/vedio1.webm": "/shoping-site/static/media/vedio1.a9dc7e1e33f4b0b78177.webm",
     "static/media/man.jpg": "/shoping-site/static/media/man.a2b0a440c311e50ebb35.jpg",
@@ -10,14 +10,23 @@
     "static/media/horizontal.png": "/shoping-site/static/media/horizontal.926ceb770a03ca78e29e.png",
     "static/media/home-sneaker.png": "/shoping-site/static/media/home-sneaker.46b6aa7da28da7da5c80.png",
     "static/media/shoes_horizontal_verticle.png": "/shoping-site/static/media/shoes_horizontal_verticle.6cbbf5e9052eb613a98b.png",
+    "static/media/App.png": "/shoping-site/static/media/App.a165de6607c3a86d18f6.png",
     "static/media/planeGrid.jpeg": "/shoping-site/static/media/planeGrid.0b06de798a35fa9f1c95.jpeg",
+    "static/media/mrbeast.svg": "/shoping-site/static/media/mrbeast.59e38fb2506d15d6a0c1df9c2b7c2042.svg",
     "static/media/women.jpg": "/shoping-site/static/media/women.08ab031626d864295148.jpg",
+    "static/media/budweiser.svg": "/shoping-site/static/media/budweiser.ec6eacc41fa2e691df47edc08097aa02.svg",
+    "static/media/barstool-store.svg": "/shoping-site/static/media/barstool-store.b7b138c1aa088322f4e919539f27615a.svg",
+    "static/media/macys.svg": "/shoping-site/static/media/macys.abbc3a769cf9751b58ef8a2d6b0e0d21.svg",
+    "static/media/menshealth.svg": "/shoping-site/static/media/menshealth.c2561ec1e64a0d09b5b0f9518bf90f10.svg",
+    "static/media/buzzfeed.svg": "/shoping-site/static/media/buzzfeed.cd436490336a05b5e1deb66110a78086.svg",
+    "static/media/forbes.svg": "/shoping-site/static/media/forbes.72bf8353b1e4e83f5c1f790e17281702.svg",
     "index.html": "/shoping-site/index.html",
-    "main.e6ee9a61.css.map": "/shoping-site/static/css/main.e6ee9a61.css.map",
-    "main.1e732378.js.map": "/shoping-site/static/js/main.1e732378.js.map"
+    "static/media/3m.svg": "/shoping-site/static/media/3m.d7acabe2e895350e0b3c8ffe411de55c.svg",
+    "main.d0553647.css.map": "/shoping-site/static/css/main.d0553647.css.map",
+    "main.9ec369e6.js.map": "/shoping-site/static/js/main.9ec369e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6ee9a61.css",
-    "static/js/main.1e732378.js"
+    "static/css/main.d0553647.css",
+    "static/js/main.9ec369e6.js"
   ]
 }
