@@ -1,9 +1,13 @@
+
 .Product{
     display: flex;
     flex-direction: column;
-    gap: 350px;
+    gap: 200px;
+    height: auto;
     align-items: center;
     position :relative;
+    height: auto;
+    width: 100vw;
 
 }
 

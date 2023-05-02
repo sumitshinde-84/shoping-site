@@ -10,47 +10,45 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
 import PlaneGrid from "../components/plainGrid";
 import Footer from "../components/footer";
 
-
 gsap.registerPlugin(ScrollToPlugin);
 
 const Home = () => {
-    const [pageLoadStatus, setPageLoadStatus] = useState(false);
-    const main = useRef(null);
+  const [pageLoadStatus, setPageLoadStatus] = useState(false);
+  const main = useRef(null);
 
-    const getPageLoadStatus = (status) => {
-        setPageLoadStatus(status);
+  const getPageLoadStatus = (status) => {
+    setPageLoadStatus(status);
+  };
+
+  const handleSmoothScroll = () => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: 0 },
+      ease: "power2.out",
+    });
+  };
+
+  useEffect(() => {
+    const bodyElement = document.querySelector("body");
+    bodyElement.addEventListener("scroll", handleSmoothScroll);
+
+    return () => {
+      bodyElement.removeEventListener("scroll", handleSmoothScroll);
     };
+  }, []);
 
-    const handleSmoothScroll = () => {
-        gsap.to(window, {
-            duration: 1,
-            scrollTo: { y: 0 },
-            ease: "power2.out",
-        });
-    };
+  return (
+    <div ref={main} className="home">
+      <Intro status={pageLoadStatus} />
+      {/* <Loader getPageLoadStatus={getPageLoadStatus} /> */}
+      <Textreveal />
+      <ImgGrid />
+      <ImgGridOpp />
+      <PlaneGrid />
 
-    useEffect(() => {
-        const bodyElement = document.querySelector("body");
-        bodyElement.addEventListener("scroll", handleSmoothScroll);
-
-        return () => {
-            bodyElement.removeEventListener("scroll", handleSmoothScroll);
-        };
-    }, []);
-
-    return (
-        <div ref={main} className="main-container">
-
-            <Intro status={pageLoadStatus} />
-            <Loader getPageLoadStatus={getPageLoadStatus} />
-            <Textreveal />
-            <ImgGrid />
-            <ImgGridOpp/>
-            <PlaneGrid/>
-
-            <Footer/>
-        </div>
-    );
+      <Footer />
+    </div>
+  );
 };
 
 export default Home;

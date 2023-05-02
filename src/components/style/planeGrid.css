@@ -9,8 +9,22 @@
     padding-right: 260px;
     color: var(--light);
     position: relative;
-    top: 100px;
+    
    
+}
+
+.planeGridWithoutAnimation{
+    width: 100vw;
+    height: 100vh;
+    font-family:'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding-right: 260px;
+    color: var(--light);
+    position: relative;
+    bottom: -300px;
 }
 
 .planeImgSect{

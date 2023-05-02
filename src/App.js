@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Product from "./pages/product";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
+
 const App = () => {
   return (
     <div className="main-container">

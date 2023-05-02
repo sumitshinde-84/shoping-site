@@ -1,8 +1,4 @@
-
-
 .video-player-container {
- 
- 
   position: absolute;
   width: 490px;
   height: 277px;
@@ -10,15 +6,9 @@
   overflow: hidden;
 }
 
-
-
-
 .custom-video-player {
   width: 100%;
   height: 100%;
-  outline: none; 
+  outline: none;
   z-index: 20;
 }
-
-
-
