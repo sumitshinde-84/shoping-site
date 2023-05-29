@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
 
       <div className="order-sect">
-        <button className="order-button">Order</button>
+      <Link className="NavLink" to="/Shop"><button className="order-button">Order</button></Link>
         <img className="cart" src={cart} alt="cart" />
         <div className="itemCount">0</div>
       </div>

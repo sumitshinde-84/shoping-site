@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-import "./style/VedeoPlayer.css"; // Import the CSS file for styling
+import "./style/VedeoPlayer.css"; 
 
 const VideoPlayer = ({ video }) => {
   const videoRef = useRef(null);

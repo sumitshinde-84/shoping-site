@@ -1,0 +1,35 @@
+.shop-detail{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    padding: 100px;
+    display:  flex;
+    flex-wrap: wrap;
+    gap: 100px;
+   
+    
+}
+
+.product-card{
+    width: 280px;
+    height: 200px;
+    border:1px border solid;
+    font-family: "Poppins", sans-serif;
+}
+
+.product-card p:nth-child(3){
+    color: gray;
+}
+
+.product-card p:nth-child(2){
+    font-size: 16px;
+}
+
+.product-card p:nth-child(4){
+    font-size: 16px;
+}
+
+.product-card img{
+    width: 280px;
+    
+}

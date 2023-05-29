@@ -1,0 +1,12 @@
+.Shop-Img{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    gap: 20px;
+    
+}
+
+.Shop-Img img{
+    width: 100%;
+
+}

@@ -40,7 +40,7 @@ const Home = () => {
   return (
     <div ref={main} className="home">
       <Intro status={pageLoadStatus} />
-      <Loader getPageLoadStatus={getPageLoadStatus} />
+      {/* <Loader getPageLoadStatus={getPageLoadStatus} /> */}
       <Textreveal />
       <ImgGrid />
       <ImgGridOpp />

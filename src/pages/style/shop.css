@@ -1,0 +1,14 @@
+.shop{
+    display: flex;
+    
+    
+    height: auto;
+    justify-content: center;
+    position :relative;
+    height: auto;
+    width: 100vw;
+    gap: 20px;
+    padding-top: 200px;
+}
+
+
