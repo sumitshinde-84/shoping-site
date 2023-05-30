@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./style/productDetail.css";
+import ShoeSize from "./shoeSize";
+import AddToCart from "./addToCart";
 
 const ProudctDetail = ()=>{
 
@@ -40,7 +42,11 @@ const ProudctDetail = ()=>{
             <p className="product-price">MRP: {product.price}$</p>
             <p className="product-tax">incl. of all taxes <br />
 (Also includes all applicable duties)</p>
+                    <p className="select-size">Select Size</p>
+                    <ShoeSize/>
+                    <AddToCart/>
                     <p className="product-description">{product.description}</p>
+                   
             </div>
         </div>
     )

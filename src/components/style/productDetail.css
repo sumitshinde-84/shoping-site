@@ -1,35 +1,38 @@
-.detail-main{
+.detail-main {
     margin-top: 160px;
-    padding:0 100px;
+    padding: 0 100px;
     display: flex;
     gap: 60px;
-}
+  }
+  
 
-.media img{
-   width: 600px;
-}
-
-.product-name{
+  
+  .media img {
+    width: 600px;
+  }
+  
+  .product-name {
     font-size: 22px;
     font-weight: 500;
-}
-
-.product-category{
+  }
+  
+  .product-category {
     font-weight: 500;
     margin-bottom: 15px;
-}
-
-.product-price{
+  }
+  
+  .product-price {
     font-weight: 500;
-}
-
-.product-tax{
+  }
+  
+  .product-tax {
     font-size: 14px;
     color: gray;
-}
-
-.product-description{
+  }
+  
+  .product-description {
     font-size: 16px;
     margin-top: 100px;
-}
-
+   
+  }
+  

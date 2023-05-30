@@ -7,6 +7,7 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Shop from "./pages/shop";
 import ProudctDetail from "./components/productDetail";
+import Signup from "./components/sign-up";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Shop" element={<Shop/>}/>
           <Route path="/Shop/:id" element={<ProudctDetail/>}/>
+          <Route path="/Signup" element={<Signup/>}/>
 
         </Routes>
       </BrowserRouter>

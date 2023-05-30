@@ -12,10 +12,13 @@ const Navbar = () => {
           Product
         </Link>
         <Link className="NavLink" to="/About">
-          About us
+          About 
         </Link>
         <Link className="NavLink" to="/Contact">
           Contact
+        </Link>
+        <Link className="NavLink" to="/Signup">
+          Signup
         </Link>
       </div>
 

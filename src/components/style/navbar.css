@@ -14,6 +14,7 @@ nav{
     left: 20%;
     top: 40px;
     box-shadow: 0 10px 40px #0000001a;;
+    z-index: 100;
   
 }
 
