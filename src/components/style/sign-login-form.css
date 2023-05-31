@@ -8,7 +8,42 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
+
+
+
+.register-form h2{
+    margin-left: 100px;
+}
+
+.login-form-open{
+    margin-left:40px;
+    margin-top: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.open-register-form{
+    margin-left:95px;
+    margin-top: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.login-form{
+   
+    display: none;
+}
+
+.login-form h2{
+   
+   margin-left: 100px;
+}
+
+
 
 .sign-login-form p{
     display: flex;

@@ -15,7 +15,6 @@ const Signup = () => {
         const element = signUpMain.current
         const nav = document.querySelector('nav')
        
-       
         gsap.fromTo(
             element,
             { opacity: 0, y: -1000 },
@@ -32,15 +31,21 @@ const Signup = () => {
             duration: 1,
             ease: "power2.out",
         })
+
+        return () => {
+            gsap.to(nav, {
+                x: 0,
+                duration: 1,
+                ease: "power2.out",
+            })
+        }
     }, [])
     useEffect(() => {
 
 
         const navigatorElement = navigator.current
         const nav = document.querySelector('nav')
-        
-
-
+    
         const toggleNavbar = (event) => {
             const signupMain = document.querySelector('.sign-login-form');
             if (navOpen) {

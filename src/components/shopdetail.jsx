@@ -1,16 +1,22 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState ,useLocation} from "react";
 import "./style/shopDetail.css";
 import { useNavigate } from 'react-router-dom';
 
 const ShopDetail = () => {
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
+ 
+  const [Cart,setCart] = useState([])
 
+
+  
+ 
   const redirectToNewPage = (id) => {
     navigate(`/shop/${id}`);
   };
-
+  
   useEffect(() => {
+  
     const fetchData = async () => {
       try {
         const response = await fetch(
@@ -24,6 +30,7 @@ const ShopDetail = () => {
       }
     };
 
+  
     fetchData();
   }, []);
 
