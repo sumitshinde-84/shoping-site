@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./style/productDetail.css";
+import { DoubleSide } from "three";
 
 const ProductDetail = () => {
   const [product, setProduct] = useState({});
@@ -37,44 +38,52 @@ const ProductDetail = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  const addItemToCart = () => {
-    const existingItem = cart.find((item) => item.id === id);
-
-    if (selectedSizes.length === 0) {
-   
-    }
-
-    if (existingItem) {
-      setCart((prevCart) =>
-        prevCart.map((item) =>
-          item.id === id
-            ? { ...item, sizes: [...item.sizes, ...selectedSizes] }
-            : item
-        )
-      );
-    } else {
-      setCart((prevCart) => [...prevCart, { id, sizes: selectedSizes }]);
-    }
-  };
-
   const sizes = [2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8.5];
 
   const selectSize = (e) => {
     const selectedSize = parseFloat(e.currentTarget.id);
-
-    if (selectedSizes.includes(selectedSize)) {
-      setSelectedSizes((prevSizes) => prevSizes.filter((size) => size !== selectedSize));
-    } else {
-      setSelectedSizes((prevSizes) => [...prevSizes, selectedSize]);
-    }
-
+  
+    setSelectedSizes([selectedSize]);
+  
     const sizeCards = document.querySelectorAll(".sizeCard");
     sizeCards.forEach((card) => {
       card.style.border = "1px solid rgba(0, 0, 0, 0.291)";
     });
     e.currentTarget.style.border = "1px solid black";
   };
+  
+  const addItemToCart = () => {
+    if (selectedSizes.length === 0) {
+      
+      return;
+    }
+  
+    const existingItemIndex = cart.findIndex((item) => item.id === id && item.sizes.length === 1 && item.sizes[0] === selectedSizes[0]);
+  
+    if (existingItemIndex !== -1) {
+      const updatedCart = [...cart];
+      updatedCart[existingItemIndex] = {
+        ...updatedCart[existingItemIndex],
+        quantity: updatedCart[existingItemIndex].quantity + 1
+      };
+      setCart(updatedCart);
+    } else {
+      setCart((prevCart) => [...prevCart, { id, sizes: selectedSizes, quantity: 1 }]);
+    }
+  
+  
+    const itemCountElement = document.querySelector('.itemCount');
+    if (itemCountElement) {
+      const itemCount = parseInt(itemCountElement.textContent, 10);
+      if (!isNaN(itemCount)) {
+        itemCountElement.textContent = itemCount + 1;
+      }
+    }
+  }
+  
+  
 
+  
   return (
     <div className="detail-main">
       <div className="media">
