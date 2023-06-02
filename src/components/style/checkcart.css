@@ -1,0 +1,160 @@
+.CheckCart{
+    width: 350px;
+    background-color:white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    z-index: 100;
+    transition: .4s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(4, 4, 4, 0.25);
+    overflow: auto;
+   
+}
+
+.closeCart{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.item {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.item-detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.item .item-name{
+    font-size: 14px;
+    font-weight: 500;
+}
+.item .item-price{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.item .item-size{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    
+    left:25px;
+    text-align: center;
+   
+}
+
+.item-quantity{
+    font-size: 12px;
+}
+
+.item-image {
+    width: 60px;
+    
+}
+
+.deleteIcon{
+    height: 17px;
+    width: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 100px;
+    margin-left: 20px;
+    min-height: 100vh;
+  }
+
+.item-quantity span{
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    border: 1px solid var(--dark);
+    text-align: center;
+}
+
+.item-quantity button:nth-child(1){
+    background-color: var(--dark);
+    color: var(--light);
+   width: 20px;
+   height: 20px;
+   border-radius: 3px;
+   
+   margin-right: 2px;
+    border: none;
+}
+
+.item-quantity button:last-child{
+    background-color: var(--dark);
+    color: var(--light);
+   width: 20px;
+   height: 20px;
+   border-radius: 3px;
+   margin-left: 2px;
+    
+    border: none;
+}
+
+
+.totalMain{
+    margin-top: 100px;
+    position:relative;
+ bottom: 50px;
+ left: 30px;
+}
+
+.summery{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.subtotal,.delivery-charges,.totalprice{
+    font-weight: 400;
+    display: flex;
+    width:  200px;
+    
+}
+
+.subtotal span,.delivery-charges span,.totalprice span{
+    margin-left: auto;
+}
+
+.totalprice {
+    height: 30px;
+    align-items: center;
+    font-weight: 500;
+}
+
+
+.checkout{
+    width: 300px;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--light);
+    margin-top: 20px;
+}
+
+.cartItems{
+    height: auto;
+}

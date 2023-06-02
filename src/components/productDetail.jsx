@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./style/productDetail.css";
-import { DoubleSide } from "three";
+import CheckCart from "./checkCart";
+import { useDispatch, useSelector } from "react-redux";
+import { add } from "../store/cartSlice";
 
 const ProductDetail = () => {
   const [product, setProduct] = useState({});
-  const [cart, setCart] = useState([]);
-  const [selectedSizes, setSelectedSizes] = useState([]);
+  const [selectedSize, setSelectedSize] = useState(0);
+  const dispatch = useDispatch();
+
 
   const { id } = useParams();
 
@@ -27,63 +30,31 @@ const ProductDetail = () => {
     fetchData();
   }, [id]);
 
-  useEffect(() => {
-    const storedCart = JSON.parse(localStorage.getItem("cart"));
-    if (storedCart && storedCart.length > 0) {
-      setCart(storedCart);
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
-
   const sizes = [2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8.5];
 
   const selectSize = (e) => {
     const selectedSize = parseFloat(e.currentTarget.id);
-  
-    setSelectedSizes([selectedSize]);
-  
+    setSelectedSize(selectedSize);
+
     const sizeCards = document.querySelectorAll(".sizeCard");
     sizeCards.forEach((card) => {
       card.style.border = "1px solid rgba(0, 0, 0, 0.291)";
     });
     e.currentTarget.style.border = "1px solid black";
   };
-  
-  const addItemToCart = () => {
-    if (selectedSizes.length === 0) {
-      
-      return;
-    }
-  
-    const existingItemIndex = cart.findIndex((item) => item.id === id && item.sizes.length === 1 && item.sizes[0] === selectedSizes[0]);
-  
-    if (existingItemIndex !== -1) {
-      const updatedCart = [...cart];
-      updatedCart[existingItemIndex] = {
-        ...updatedCart[existingItemIndex],
-        quantity: updatedCart[existingItemIndex].quantity + 1
-      };
-      setCart(updatedCart);
-    } else {
-      setCart((prevCart) => [...prevCart, { id, sizes: selectedSizes, quantity: 1 }]);
-    }
-  
-  
-    const itemCountElement = document.querySelector('.itemCount');
-    if (itemCountElement) {
-      const itemCount = parseInt(itemCountElement.textContent, 10);
-      if (!isNaN(itemCount)) {
-        itemCountElement.textContent = itemCount + 1;
-      }
-    }
-  }
-  
-  
 
-  
+  const handleAdd = () => {
+    const cartItem = {
+      id: product._id,
+      size: selectedSize,
+      image: product.image,
+      name: product.name,
+      price:product.price,
+      quantity: 1,
+    };
+    dispatch(add(cartItem));
+  };
+
   return (
     <div className="detail-main">
       <div className="media">
@@ -109,16 +80,17 @@ const ProductDetail = () => {
             <div
               id={size}
               onClick={selectSize}
-              className={`sizeCard ${selectedSizes.includes(size) ? "selected" : ""}`}
+              className={`sizeCard ${selectedSize === size ? "selected" : ""}`}
               key={size}
             >
               <p>{size}</p>
             </div>
           ))}
         </div>
-        <div onClick={addItemToCart} className="addToCart">
+        <div onClick={handleAdd} className="addToCart">
           <p>Add To Bag</p>
         </div>
+
         <p className="product-description">{product.description}</p>
       </div>
     </div>

@@ -92,7 +92,7 @@ const Signup = () => {
     }, [navOpen])
 
     return (
-        <div className='container'>
+        <div className='Signup'>
             <div ref={signUpMain} className='sign-up-main'>
                     <SignLoginForm/>
             </div>

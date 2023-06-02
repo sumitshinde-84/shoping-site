@@ -8,14 +8,17 @@ import Contact from "./pages/Contact";
 import Shop from "./pages/shop";
 import ProudctDetail from "./components/productDetail";
 import Signup from "./components/sign-up";
-
+import CheckCart from "./components/checkCart";
+import { Provider } from "react-redux";
+import store from "./store/store";
 const App = () => {
   return (
     <div className="main-container">
-     
+     <Provider store={store}>
       <BrowserRouter>
       <Navbar />
         <Routes>
+          
           <Route path="/shoping-site/" element={<Home />} />
           <Route path="/Product" element={<Product />} />
           <Route path="/About" element={<AboutUs />} />
@@ -23,10 +26,11 @@ const App = () => {
           <Route path="/Shop" element={<Shop/>}/>
           <Route path="/Shop/:id" element={<ProudctDetail/>}/>
           <Route path="/Signup" element={<Signup/>}/>
-
+          
         </Routes>
-      
+        <CheckCart  />
       </BrowserRouter>
+      </Provider>
     </div>
   );
 };
