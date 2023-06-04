@@ -4,14 +4,16 @@
   
   display: flex;
 }
-.loader{
+.order-loader{
     background-color: var(--light);
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-.loader img{
+.order-loader img{
     width: 60px;
 }
 

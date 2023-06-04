@@ -39,7 +39,7 @@ const Order = () => {
   return (
     <div className={`order ${isLoading ? "loading" : ""}`}>
       {isLoading ? (
-        <div className="loader"><img src={loaderImg} alt="loaderImg" /></div>
+        <div className="order-loader"><img src={loaderImg} alt="loaderImg" /></div>
       ) : (
         <>
           <div className="Process">
