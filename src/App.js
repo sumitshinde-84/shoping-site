@@ -11,6 +11,7 @@ import Signup from "./components/sign-up";
 import CheckCart from "./components/checkCart";
 import { Provider } from "react-redux";
 import store from "./store/store";
+import Order from "./pages/orderPage";
 const App = () => {
   return (
     <div className="main-container">
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/Shop" element={<Shop/>}/>
           <Route path="/Shop/:id" element={<ProudctDetail/>}/>
           <Route path="/Signup" element={<Signup/>}/>
+          <Route path="/checkout" element={<Order/>}/>
           
         </Routes>
         <CheckCart  />

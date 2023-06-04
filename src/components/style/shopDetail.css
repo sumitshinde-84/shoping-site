@@ -1,15 +1,26 @@
 .shop-detail{
     width: 100vw;
     height:auto;
-     
-    border: 1px solid black;
     padding: 100px;
     padding-bottom: 200px;
-    display:  flex;
-    flex-wrap: wrap;
-   gap: 240px 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    grid-template-rows: auto;
+    flex: auto;
+     gap: 260px 150px;
+     
    
     
+}
+
+.Typing-text{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    font-size: 40px;
+    font-weight: 400;
+
 }
 
 .product-card{

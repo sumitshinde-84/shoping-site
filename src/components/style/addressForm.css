@@ -1,0 +1,100 @@
+
+
+.addressform{
+    width: 800px;
+    height: 100vh;
+    padding: 100px;
+    height: 100%;
+  
+    
+
+}
+
+.addressform h1{
+    position: absolute;
+    font-size: 43px;
+    bottom: 450px;
+}
+
+.addressform h2{
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+input{
+    
+    font-size: 13px;
+    width: 600px;
+    height: 45px;
+    margin: 10px;
+    border-radius: 5px;
+    border: .03em solid gray;
+    padding: 5px;
+    padding-top: 15px;
+}
+
+ .addressform input:focus{
+    
+    border: 1px solid #105989;
+}
+.input-para{
+    position: relative;
+    width: 100%;
+}
+
+.input-para > .address-lable{
+    color: gray;
+    position: absolute;
+    top:15px;
+    font-size: 13px;
+    left:20px;
+}
+
+
+
+
+.postal-city {
+
+    display: flex;
+    
+    width:600px;
+    gap: 10px;
+    
+}
+
+.postal-city input{
+    width: 285px;
+    
+
+    
+}
+
+
+.addressform button {
+    padding: 14px 50px ;
+    background-color: #105989;
+    color: var(--light);
+    font-size: 15px;
+    font-weight: 900;
+    border: none;
+    position: absolute;
+    margin-top: 10px;
+    right: 630px;
+    border-radius: 5px;
+    scale: 1;
+    transition: .2s scale ease-in;
+    cursor: pointer;
+
+}
+
+.addressform button:hover{
+ scale: 0.97;
+}
+
+
+.error-message{
+    font-size: 13px;
+     color: red;
+     margin-left: 10px;
+}

@@ -1,22 +1,17 @@
-import { useEffect, useState ,useLocation} from "react";
+import { useEffect, useState } from "react";
 import "./style/shopDetail.css";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const ShopDetail = () => {
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
- 
-  const [Cart,setCart] = useState([])
+  const [Cart, setCart] = useState([]);
 
-
-  
- 
   const redirectToNewPage = (id) => {
     navigate(`/shop/${id}`);
   };
-  
+
   useEffect(() => {
-  
     const fetchData = async () => {
       try {
         const response = await fetch(
@@ -30,12 +25,24 @@ const ShopDetail = () => {
       }
     };
 
-  
     fetchData();
   }, []);
 
+  const handleFilterChange = (filterType) => {
+    let sortedProducts;
+
+    if (filterType === "high") {
+      sortedProducts = [...products].sort((a, b) => b.price - a.price);
+    } else if (filterType === "low") {
+      sortedProducts = [...products].sort((a, b) => a.price - b.price);
+    }
+
+    setProducts(sortedProducts);
+  };
+
   return (
     <div className="shop-detail">
+      
       {products.map((product) => (
         <div
           key={product._id}

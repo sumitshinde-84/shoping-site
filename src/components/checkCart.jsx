@@ -4,6 +4,7 @@ import "./style/checkcart.css";
 import { v4 as uuidv4 } from "uuid";
 import { useDispatch, useSelector } from "react-redux";
 import { increaseQuantity, decreaseQuantity, remove } from "../store/cartSlice";
+import { Link } from "react-router-dom";
 
 const CheckCart = () => {
   const [products, setProducts] = useState([]);
@@ -86,7 +87,7 @@ const CheckCart = () => {
       <hr />
       <p className="totalprice">Total: <span>{calculateTotalPrice()}</span>$</p>
       <hr />
-      <div className="checkout">Checkout</div>
+      <Link className="checkout-btn" to='/checkout'><div onClick={CloseCart} className="checkout">Checkout</div></Link>
       </div>
       
     </div>

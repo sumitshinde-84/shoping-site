@@ -1,5 +1,5 @@
 .CheckCart{
-    width: 350px;
+    width: 310px;
     background-color:white;
     height: 100vh;
     position: fixed;
@@ -9,6 +9,11 @@
     transition: .4s ease-in-out;
     box-shadow: 0px 4px 10px rgba(4, 4, 4, 0.25);
     overflow: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
    
 }
 
@@ -27,6 +32,7 @@
     height: 70px;
     display: flex;
     gap: 10px;
+    height: auto;
 }
 
 
@@ -34,6 +40,7 @@
 .item-detail{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .item .item-name{
@@ -50,7 +57,7 @@
     width: 17px;
     height: 17px;
     
-    left:25px;
+    left:65px;
     text-align: center;
    
 }
@@ -115,9 +122,11 @@
 .totalMain{
     margin-top: 100px;
     position:relative;
- bottom: 50px;
- left: 30px;
+    bottom: 50px;
+ 
 }
+
+.CheckCart hr{ width: 200px;}
 
 .summery{
     font-size: 20px;
@@ -144,7 +153,7 @@
 
 
 .checkout{
-    width: 300px;
+    width: 200px;
     height: 50px;
     background-color: var(--dark);
     border-radius: 30px;
@@ -158,3 +167,4 @@
 .cartItems{
     height: auto;
 }
+

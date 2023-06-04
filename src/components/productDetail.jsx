@@ -49,7 +49,7 @@ const ProductDetail = () => {
       size: selectedSize,
       image: product.image,
       name: product.name,
-      price:product.price,
+      price: product.price,
       quantity: 1,
     };
     dispatch(add(cartItem));

@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const OpenCheckCart = () => {
 
-  
+     
 
       const path = window.location.pathname; 
     let reference = path.split('/')[1];

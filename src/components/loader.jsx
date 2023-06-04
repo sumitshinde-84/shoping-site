@@ -59,6 +59,7 @@ const Loader = ({ getPageLoadStatus }) => {
                                   ease: "Expo.easeOut",
                                   onComplete: () => {
                                     getPageLoadStatus(true);
+                                    document.querySelector('nav').style.zIndex='100'
                                   },
                                 });
                               },
@@ -75,6 +76,8 @@ const Loader = ({ getPageLoadStatus }) => {
         });
       },
     });
+
+    
   }, []);
 
   return (

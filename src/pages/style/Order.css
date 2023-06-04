@@ -1,0 +1,22 @@
+.order {
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+}
+.loader{
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img{
+    width: 60px;
+}
+
+.Process {
+  background-color: white;
+  width: 60%;
+  height: 130vh;
+}
