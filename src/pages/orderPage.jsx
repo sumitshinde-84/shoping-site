@@ -6,11 +6,18 @@ import "./style/Order.css";
 import loaderImg from "../images/loader.gif";
 import Dispatch from "../components/dispatch";
 import CheckOutMain from "../components/checkoutMain";
+import { useSelector } from "react-redux";
 
 const Order = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
-  const [addressFormData, setFormData] = useState(null);
+  const [addressFormData, setFormData] = useState(null);  
+  const [totalPrice, setTotalPrice] = useState(null)
+  const cart = useSelector((state) => state.cart);
+
+
+
+
 
   useEffect(() => {
     const nav = document.querySelector("nav");
@@ -35,6 +42,54 @@ const Order = () => {
     console.log(formData);
   };
 
+  const postOrder= async (event)=>{
+    
+    event.preventDefault();
+
+    try {
+      const response = await fetch('https://inventryapp-production.up.railway.app/catalog/placeorder', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(
+          {
+            username:localStorage.getItem('email'),
+            cart:[...cart],
+            totalPrice,
+            status:'order placed',
+            paymentStatus:'paid'
+          
+      })
+      });
+
+      if (response.ok) {
+       
+        console.log('Order placed');
+      } else {
+        
+        console.log('Failed');
+      }
+    } catch (error) {
+      console.error('Error occurred while registering:', error);
+    }
+    console.log({
+      username:localStorage.getItem('email'),
+      cart:[...cart],
+      totalPrice,
+      status:'order placed',
+      paymentStatus:'paid'
+    
+})
+
+  }
+
+  const getTotalPriceOfItems = (totalPriceOfItems) => {
+    
+      setTotalPrice(totalPriceOfItems);
+   
+  };
+
   useEffect(() => {
     if (!isLoading) {
       gsap.to(".order", { opacity: 1, duration: 1 });
@@ -55,14 +110,17 @@ const Order = () => {
             {addressFormData === null ? (
               <AddressForm getAddressFormData={getAddressFormData} />
             ) : (
-              <Dispatch
+              <Dispatch 
+
+              
+                postOrder={postOrder}
                 addressFormData={addressFormData}
                 getAddressFormData={getAddressFormData}
               />
             )}
           </div>
           <div className="CartInfo">
-              <CheckOutMain/>
+              <CheckOutMain getTotalPriceOfItems={getTotalPriceOfItems}/>
           </div>
         </>
       )}

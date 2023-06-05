@@ -1,5 +1,5 @@
 import "./style/dispatch.css"
-const Dispatch = ({ addressFormData, getAddressFormData }) => {
+const Dispatch = ({ addressFormData, getAddressFormData,postOrder }) => {
     const changeHandler = () => {
       getAddressFormData(null);
     };
@@ -27,7 +27,7 @@ const Dispatch = ({ addressFormData, getAddressFormData }) => {
         <div className="dispatch-main">
             <p className="dispatch-type">Standard <span>Free</span></p>
         </div>
-        <button>Demo pay</button>
+        <button onClick={postOrder} >Demo pay</button>
       </div>
     );
   };
