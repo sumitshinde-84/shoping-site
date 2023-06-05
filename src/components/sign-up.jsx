@@ -14,7 +14,7 @@ const Signup = () => {
     useEffect(() => {
         const element = signUpMain.current
         const nav = document.querySelector('nav')
-       
+        nav.style.zIndex='100' 
         gsap.fromTo(
             element,
             { opacity: 0, y: -1000 },

@@ -19,7 +19,7 @@
 
 .login-form-open{
     margin-left:40px;
-    margin-top: 15px;
+    margin-top: 10px;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -48,7 +48,7 @@
 .sign-login-form p{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: -7px;
     
 }
 
@@ -56,7 +56,7 @@
     width: 280px;
     margin-left: auto;
     margin-right: auto;
-    height: 25px;
+    height: 23px;
 }
 
 .sign-login-form label{

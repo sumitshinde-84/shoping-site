@@ -66,7 +66,7 @@ const SignLoginForm = () => {
         // Login successful
         console.log('Login successful');
         localStorage.setItem("email", loginFormData.email);
-        naviagate('/shop')
+        naviagate('/Shop')
         
       } else {
         // Login failed

@@ -5,12 +5,24 @@ import { v4 as uuidv4 } from "uuid";
 import { useDispatch, useSelector } from "react-redux";
 import { increaseQuantity, decreaseQuantity, remove } from "../store/cartSlice";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const CheckCart = () => {
   const [products, setProducts] = useState([]);
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
+  const handleCheckout = () => {
+    const email = localStorage.getItem('email');
+    if (email !== null) {
+    
+      navigate('/checkout');
+    } else {
+     
+      navigate('/signup');
+    }
+  };
   const CloseCart = () => {
     const path = window.location.pathname;
     let reference = path.split("/")[1];
@@ -87,7 +99,7 @@ const CheckCart = () => {
       <hr />
       <p className="totalprice">Total: <span>{calculateTotalPrice()}</span>$</p>
       <hr />
-      <Link className="checkout-btn" to='/checkout'><div onClick={CloseCart} className="checkout">Checkout</div></Link>
+      <div onClick={()=>{CloseCart();handleCheckout()}} className="checkout">Checkout</div>
       </div>
       
     </div>
