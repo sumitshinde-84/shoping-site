@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "./style/addressForm.css"
-const AddressForm = () => {
+const AddressForm = ({getAddressFormData}) => {
     const [formData, setFormData] = useState({
         phone:"",
         country:"",
@@ -25,7 +25,7 @@ const AddressForm = () => {
         e.preventDefault();
         const validationErrors = validateForm();
         if (Object.keys(validationErrors).length === 0) {
-         
+          getAddressFormData(formData)
           console.log(formData);
         } else {
          
@@ -43,9 +43,7 @@ const AddressForm = () => {
           errors.country = "Country is required";
         }
       
-        if (!formData.company) {
-          errors.company = "Company is required";
-        }
+        
       
         if (!formData.appartment) {
           errors.appartment = "Apartment is required";
@@ -53,8 +51,6 @@ const AddressForm = () => {
       
         if (!formData.postalCode) {
           errors.postalCode = "Postal Code is required";
-        } else if (!/^\d{5}$/.test(formData.postalCode)) {
-          errors.postalCode = "Postal Code should be 5 digits";
         }
       
         if (!formData.city) {
@@ -85,7 +81,7 @@ const AddressForm = () => {
                 <p className="input-para">
                     <lable className="address-lable">company</lable>
                     <input type="text" id="company" name="company"  onChange={InputHandler} value={formData.company} />
-                    {errors.company && <span className="error-message">{errors.company}</span>}
+                    
                 </p>
                 <p className="input-para">
                     

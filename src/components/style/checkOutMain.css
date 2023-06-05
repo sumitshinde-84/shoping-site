@@ -1,0 +1,173 @@
+.CheckCartMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  
+}
+
+.coupon-form-total-sect{
+    
+    position: absolute;
+    top: 240px;
+    left: 60px;
+    
+    
+}
+
+.CheckCartMain .item img {
+  width: 80px;
+}
+
+.CheckCartMain .total-per-item-price {
+  position: absolute;
+  right: -100px;
+  font-weight: 400;
+}
+
+.CheckCartMain .item-size {
+  margin-left: 40px;
+}
+
+.CheckCartMain .item {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  gap: 10px;
+  height: auto;
+}
+
+.item-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CheckCartMain .item .item-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+.CheckCartMain .item .item-price {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.CheckCartMain .item .item-size {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+
+  left: 80px;
+  text-align: center;
+}
+
+.CheckCartMain .item-quantity {
+  font-size: 12px;
+}
+
+.CheckCartMain .item-image {
+  width: 60px;
+}
+
+.CheckCartMain .item-quantity span {
+  border: none;
+}
+
+.CheckCartMain .cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  margin-left: 70px;
+  min-height: auto;
+  margin-bottom: 100px;
+
+  
+}
+
+.totalMain {
+  margin-top: 100px;
+  position: relative;
+  bottom: 50px;
+}
+
+.CheckCart hr {
+  width: 200px;
+}
+
+.summery {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.subtotal,
+.delivery-charges,
+.totalprice {
+  font-weight: 400;
+  display: flex;
+  width: 200px;
+}
+
+.subtotal span,
+.delivery-charges span,
+.totalprice span {
+  margin-left: auto;
+}
+
+.totalprice {
+  height: 30px;
+  align-items: center;
+  font-weight: 500;
+}
+
+.checkout {
+  width: 200px;
+  height: 50px;
+  background-color: var(--dark);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light);
+  margin-top: 20px;
+}
+
+.cartItems {
+  height: auto;
+}
+
+.discount-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount-form input {
+  width: 300px;
+}
+
+.discount-form button {
+  padding: 8px 15px;
+  height: 47px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #105989;
+  color: white;
+  scale: 1;
+  transition: 0.2s scale ease-in;
+  cursor: pointer;
+}
+
+.discount-form button:hover {
+  scale: 0.98;
+}
+
+
+
+.discount-form ::placeholder{
+    font-size: 15px ;
+    
+}

@@ -5,6 +5,7 @@
     height: 100vh;
     padding: 100px;
     height: 100%;
+    position: relative;
   
     
 
@@ -13,7 +14,7 @@
 .addressform h1{
     position: absolute;
     font-size: 43px;
-    bottom: 480px;
+    top: 25px;
 }
 
 .addressform h2{
@@ -76,11 +77,11 @@ input{
     background-color: #105989;
     color: var(--light);
     font-size: 15px;
-    font-weight: 900;
+    font-weight: 500;
     border: none;
     position: absolute;
     margin-top: 10px;
-    right: 630px;
+    right:89px;
     border-radius: 5px;
     scale: 1;
     transition: .2s scale ease-in;

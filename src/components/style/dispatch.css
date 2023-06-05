@@ -6,6 +6,7 @@
     align-items: center;
     
     position: relative;
+    overflow: hidden;
 }
 
 .dispatch h1{
@@ -26,6 +27,7 @@
     align-items: center;
     border-radius: 10px;
     margin-top: 130px;
+    height: auto;
 }
 
 .contact{
@@ -83,6 +85,7 @@
     width: 80%;
     justify-content: space-between;
     padding-top: 15px;
+    height: auto;
 }
 
 
