@@ -16,7 +16,16 @@ const Order = () => {
   const cart = useSelector((state) => state.cart);
 
 
-
+  const getCookieValue = (name) => {
+    const cookies = document.cookie.split("; ");
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].split("=");
+      if (cookie[0] === name) {
+        return cookie[1];
+      }
+    }
+    return null; 
+  };
 
 
   useEffect(() => {
@@ -54,7 +63,8 @@ const Order = () => {
         },
         body: JSON.stringify(
           {
-            username:localStorage.getItem('email'),
+            username:getCookieValue("email"),
+            addressFormData,
             cart:[...cart],
             totalPrice,
             status:'order placed',
@@ -75,6 +85,7 @@ const Order = () => {
     }
     console.log({
       username:localStorage.getItem('email'),
+      addressFormData,
       cart:[...cart],
       totalPrice,
       status:'order placed',

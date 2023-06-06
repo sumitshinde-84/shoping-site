@@ -13,8 +13,19 @@ const CheckCart = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const getCookieValue = (name) => {
+    const cookies = document.cookie.split("; ");
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].split("=");
+      if (cookie[0] === name) {
+        return cookie[1];
+      }
+    }
+    return null; 
+  };
+
   const handleCheckout = () => {
-    const email = localStorage.getItem('email');
+    const email = getCookieValue('email');
     if (email !== null) {
     
       navigate('/checkout');

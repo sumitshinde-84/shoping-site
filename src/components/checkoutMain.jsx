@@ -8,8 +8,9 @@ import { Link } from "react-router-dom";
 
 const CheckOutMain = ({ getTotalPriceOfItems }) => {
   const cart = useSelector((state) => state.cart);
-  const [totalPriceOfItems, setTotalPriceOfItems] = useState(0);
+  const [totalPriceOfItems, setTotalPriceOfItems] = useState(null);
 
+  
   useEffect(() => {
     const calculateTotalPrice = () => {
       let totalPrice = 0;
@@ -24,7 +25,7 @@ const CheckOutMain = ({ getTotalPriceOfItems }) => {
 
   useEffect(()=>{
     getTotalPriceOfItems(totalPriceOfItems);
-  },[])
+  },[totalPriceOfItems])
 
   return (
     <div className="CheckCartMain">

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const SignLoginForm = () => {
 
-  const naviagate = useNavigate()
+  const navigate = useNavigate();
   const [registerFormData, setRegisterFormData] = useState({
     firstname: '',
     lastname: '',
@@ -17,15 +17,16 @@ const SignLoginForm = () => {
     password: ''
   });
 
-  const openLoginForm = ()=>{
-    document.querySelector('.register-form').style.display='none'
-    document.querySelector('.login-form').style.display='block'
-  }
+  const openLoginForm = () => {
+    document.querySelector('.register-form').style.display = 'none';
+    document.querySelector('.login-form').style.display = 'block';
+  };
 
-  const openRegisterForm =()=>{
-    document.querySelector('.register-form').style.display='block'
-    document.querySelector('.login-form').style.display='none'
-}
+  const openRegisterForm = () => {
+    document.querySelector('.register-form').style.display = 'block';
+    document.querySelector('.login-form').style.display = 'none';
+  };
+
   const handleRegisterSubmit = async (event) => {
     event.preventDefault();
     console.log('Registering...');
@@ -41,6 +42,10 @@ const SignLoginForm = () => {
       if (response.ok) {
         // Registration successful
         console.log('Registration successful');
+        const expirationDate = new Date();
+        expirationDate.setDate(expirationDate.getDate() + 2);
+        document.cookie = `email=${loginFormData.email}; expires=${expirationDate.toUTCString()}; path=/`;
+       
       } else {
         // Registration failed
         console.log('Registration failed');
@@ -65,12 +70,12 @@ const SignLoginForm = () => {
       if (response.ok) {
         // Login successful
         console.log('Login successful');
-        localStorage.setItem("email", loginFormData.email);
-        naviagate('/Shop')
-        
+        localStorage.setItem('email',loginFormData.email)
+        navigate('/Shop');
       } else {
         // Login failed
         console.log('Login failed');
+        console.log(loginFormData)
       }
     } catch (error) {
       console.error('Error occurred while logging in:', error);
@@ -95,7 +100,7 @@ const SignLoginForm = () => {
     <div className="sign-login-form">
       <div className="register-form">
         <h2>Sign Up</h2>
-        <form  onSubmit={handleRegisterSubmit}>
+        <form onSubmit={handleRegisterSubmit}>
           <p>
             <label htmlFor="firstname">First Name</label>
             <input
@@ -133,7 +138,7 @@ const SignLoginForm = () => {
             />
           </p>
           <button onClick={openLoginForm} type="submit">Register</button>
-          <p onClick={openLoginForm} className='login-form-open' >already have account</p>
+          <p onClick={openLoginForm} className='login-form-open'>already have account</p>
         </form>
       </div>
       <div className="login-form">
@@ -158,7 +163,7 @@ const SignLoginForm = () => {
             />
           </p>
           <button type="submit">Login</button>
-          <p onClick={openRegisterForm} className='open-register-form' >Register</p>
+          <p onClick={openRegisterForm} className='open-register-form'>Register</p>
         </form>
       </div>
     </div>
