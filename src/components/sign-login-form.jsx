@@ -70,7 +70,9 @@ const SignLoginForm = () => {
       if (response.ok) {
         // Login successful
         console.log('Login successful');
-        localStorage.setItem('email',loginFormData.email)
+        const expirationDate = new Date();
+        expirationDate.setDate(expirationDate.getDate() + 2);
+        document.cookie = `email=${loginFormData.email}; expires=${expirationDate.toUTCString()}; path=/`;
         navigate('/Shop');
       } else {
         // Login failed

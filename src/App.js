@@ -12,6 +12,7 @@ import CheckCart from "./components/checkCart";
 import { Provider } from "react-redux";
 import store from "./store/store";
 import Order from "./pages/orderPage";
+import Profile from "./components/profile";
 const App = () => {
   return (
     <div className="main-container">
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/checkout" element={<Order/>}/>
           
         </Routes>
+        <Profile/>
         <CheckCart  />
       </BrowserRouter>
       </Provider>

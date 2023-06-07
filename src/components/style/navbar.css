@@ -35,7 +35,7 @@ nav{
     display: flex;
     column-gap: 20px;
     position: relative;
-    left:100px;
+    left:110px;
     font-size: 18px;
     font-weight: 400;
 }
@@ -46,7 +46,7 @@ nav{
     width: 100px;
     justify-content: center;
     position: relative;
-    left: 80px;
+    left: 90px;
 }
 
 .navItems .NavLink {
@@ -87,6 +87,7 @@ nav{
     scale: 1;
     transition: scale .2 ease-in-out;
     font-weight: 500;
+    margin-left: 8px;
     
 }
 
@@ -114,4 +115,20 @@ nav{
     color: var(--light);
     font-size: 10px;
     font-weight: 500;
+}
+
+.profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 72px;
+    cursor: pointer;
+}
+
+.profile img{
+    width: 20px;
 }
