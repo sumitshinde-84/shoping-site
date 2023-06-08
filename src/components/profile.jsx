@@ -1,21 +1,33 @@
 
 import './style/profile.css'
+import ManageOrders from "../pages/manageOrder";
+import { useNavigate } from 'react-router-dom';
+
 
 const Profile = ()=>{
+    
+    const navigator = useNavigate();
+
+
+    const handleNavigate = ()=>{
+        navigator('/orders')
+    }
+
+  const  getCookieValue = (name) => {
+        const cookies = document.cookie.split("; ");
+        for (let i = 0; i < cookies.length; i++) {
+          const cookie = cookies[i].split("=");
+          if (cookie[0] === name) {
+            return cookie[1];
+          }
+        }
+        return null;
+      };
 
     const closeProfile = ()=>{
-        const path = window.location.pathname;
-        let reference = path.split("/")[1];
-        if (reference === "shoping-site") {
-          reference = "home";
-        } else if (reference === "Shop") {
-          reference = "shop-detail";
-        } else if (reference === "shop") {
-          reference = "detail-main";
-        }
-        document.querySelector('.profile-component').style.scale='0'
-        document.querySelector(`.${reference}`).style.filter = "none";
-        document.querySelector(`nav`).style.filter = "none";
+      
+        document.querySelector('.profile-component').style.display='none'
+        
     }
 
     const handleLogOut = ()=>{
@@ -29,8 +41,8 @@ const Profile = ()=>{
             <p className="close" onClick={closeProfile}>X</p>
             <div className="options">
                 <ul>
-                    <li><p>Profile</p></li>
-                    <li><p>Manage orders</p></li>
+                    <li><p><strong>{getCookieValue('email')}</strong>  </p></li>
+                    <li onClick={handleNavigate}><p>Manage orders</p></li>
                     <li onClick={handleLogOut}><p>Log out</p></li>
                 </ul>
 

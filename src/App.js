@@ -13,6 +13,8 @@ import { Provider } from "react-redux";
 import store from "./store/store";
 import Order from "./pages/orderPage";
 import Profile from "./components/profile";
+import ManageOrders from "./pages/manageOrder";
+
 const App = () => {
   return (
     <div className="main-container">
@@ -29,6 +31,8 @@ const App = () => {
           <Route path="/Shop/:id" element={<ProudctDetail/>}/>
           <Route path="/Signup" element={<Signup/>}/>
           <Route path="/checkout" element={<Order/>}/>
+          <Route path="/orders" element={<ManageOrders/>}/>
+
           
         </Routes>
         <Profile/>

@@ -21,19 +21,10 @@ const Navbar = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const openProfile = () => {
-    const path = window.location.pathname;
-    document.querySelector(".profile-component").style.scale = "1";
+   
+    document.querySelector(".profile-component").style.display = "flex";
 
-    let reference = path.split("/")[1];
-    if (reference === "shoping-site") {
-      reference = "home";
-    } else if (reference === "Shop") {
-      reference = "shop-detail";
-    } else if (reference === "shop") {
-      reference = "detail-main";
-    }
-    document.querySelector(`.${reference}`).style.filter = "blur(5px)";
-    document.querySelector(`nav`).style.filter = "blur(5px)";
+  
   };
 
   useEffect(() => {
