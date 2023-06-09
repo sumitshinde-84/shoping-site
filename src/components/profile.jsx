@@ -41,6 +41,7 @@ const Profile = ()=>{
             <p className="close" onClick={closeProfile}>X</p>
             <div className="options">
                 <ul>
+                    
                     <li><p><strong>{getCookieValue('email')}</strong>  </p></li>
                     <li onClick={handleNavigate}><p>Manage orders</p></li>
                     <li onClick={handleLogOut}><p>Log out</p></li>

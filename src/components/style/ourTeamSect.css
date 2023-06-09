@@ -1,0 +1,17 @@
+.our-team-sect{
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.team-member {
+    display: flex;
+    gap: 140px;
+}

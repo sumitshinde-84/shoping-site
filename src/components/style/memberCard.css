@@ -1,0 +1,96 @@
+
+
+.member-image img{
+    width: 230px;
+    height: 300px;
+    border-radius: 10px;
+    z-index: 100;
+    position: absolute;
+
+    
+}
+
+.member-card:first-child{
+    margin-top: 25px;
+}
+
+.member-card:last-child{
+    margin-top: 25px;
+}
+.member-card:first-child .back-card{
+    width: 230px;
+    height: 300px;
+    background-color: var(--dark);
+    z-index:5 ;
+    position: relative;
+   bottom: 25px;
+   right: 25px;
+   border-radius: 10px;
+  
+}
+
+.member-card p:first-child{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 35px;
+
+}
+
+.member-card:nth-child(2) p:first-child{
+    margin-top: 60px;
+}
+
+.member-card p:nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+
+}
+
+.member-card p:nth-child(3){
+    font-size: 12px;
+    width: 270px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.member-card button{
+    background-color: var(--dark);
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: none;
+    color: var(--light);
+    margin-top: 8px;
+    font-weight: 600;
+    scale: 1;
+    transition: .3s scale ease-in;
+    cursor: pointer;
+}
+
+.member-card button:hover{
+    scale: .94;
+}
+
+.member-card:nth-child(2) .back-card{
+    width: 230px;
+    height: 300px;
+    background-color: var(--dark);
+    z-index:5 ;
+    position: relative;
+   top: 25px;
+   left: 25px;
+   border-radius: 10px;
+  
+}
+
+.member-card:last-child .back-card{
+    width: 230px;
+    height: 300px;
+    background-color: var(--dark);
+    z-index:5 ;
+    position: relative;
+   bottom: 25px;
+   left: 25px;
+   border-radius: 10px;
+  
+}

@@ -8,11 +8,15 @@ import video2 from "../video/video2.webm"
 import "./style/product.css"
 import PlaneGridWithoutAnimation from "../components/planeGridWithoutAnimation"
 import OurApp from "../components/ourApp"
-
+import { useEffect } from "react"
 import InfiniteSlider from "../components/slider"
 
+
 const Product = () => {
-    
+    useEffect(()=>{
+        document.querySelector('body').style.backgroundColor='var(--light)'
+        document.querySelector('body').style.color='var(--dark)'
+    },[])
 
     return (
         <div className="Product">

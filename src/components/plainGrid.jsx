@@ -4,10 +4,18 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "./style/planeGrid.css";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PlaneGrid = () => {
   gsap.registerPlugin(ScrollTrigger);
   const planeGridRef = useRef(null);
+  const navigator = useNavigate();
+
+
+  const handleNavigate = ()=>{
+      navigator('/Shop')
+  }
+
 
   useEffect(() => {
     const scrollBarSmooth = gsap.timeline({
@@ -45,7 +53,7 @@ const PlaneGrid = () => {
 
         <div id="gridStyleContainer">
           <p>As easy to order as it is to use.</p>
-          <button className="planeGridButton">to the Shop</button>
+          <button onClick={handleNavigate} className="planeGridButton">to the Shop</button>
         </div>
       </div>
     </div>

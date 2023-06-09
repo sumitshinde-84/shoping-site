@@ -7,6 +7,8 @@ import loaderImg from "../images/loader.gif";
 import Dispatch from "../components/dispatch";
 import CheckOutMain from "../components/checkoutMain";
 import { useSelector } from "react-redux";
+import { removeAll } from "../store/cartSlice";
+import { useDispatch } from "react-redux";
 
 const Order = () => {
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ const Order = () => {
   const [addressFormData, setFormData] = useState(null);  
   const [totalPrice, setTotalPrice] = useState(null)
   const cart = useSelector((state) => state.cart);
-
+  const dispatch = useDispatch();
 
   const getCookieValue = (name) => {
     const cookies = document.cookie.split("; ");
@@ -27,6 +29,9 @@ const Order = () => {
     return null; 
   };
 
+  const emptyCart =()=>{
+    dispatch(removeAll([]))
+  }
 
   useEffect(() => {
     const nav = document.querySelector("nav");
@@ -76,6 +81,9 @@ const Order = () => {
       if (response.ok) {
        
         console.log('Order placed');
+        localStorage.setItem('cart',JSON.stringify([]))
+        emptyCart()
+        navigate('/orders')
       } else {
         
         console.log('Failed');

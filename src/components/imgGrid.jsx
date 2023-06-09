@@ -5,8 +5,16 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "./style/imgGrid.css";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ImgGrid = () => {
+
+  const navigator = useNavigate();
+
+
+  const handleNavigate = ()=>{
+      navigator('/Shop')
+  }
   gsap.registerPlugin(ScrollTrigger);
   const imgGridRef = useRef(null);
 
@@ -49,6 +57,7 @@ const ImgGrid = () => {
           laudantium architecto impedit asperiores? Nostrum ducimus ipsam a
           numquam omnis iste nam ut?
         </p>
+        <button onClick={handleNavigate} className="imgGrid-Btn" >Shop</button>
       </div>
       <div className="imgGridSect">
         <img className="verticle" src={ImgGridImg} alt="imgGrid" />

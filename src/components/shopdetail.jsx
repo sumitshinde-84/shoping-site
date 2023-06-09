@@ -13,6 +13,7 @@ const ShopDetail = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+     
       try {
         const response = await fetch(
           "https://inventryapp-production.up.railway.app/catalog/products/send"

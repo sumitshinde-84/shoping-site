@@ -43,6 +43,8 @@ const CheckCart = () => {
       reference = "shop-detail";
     } else if (reference === "shop") {
       reference = "detail-main";
+    }else if (reference === "orders") {
+      reference = "manageOrders";
     }
     document.querySelector(".CheckCart").style.right = "-350px";
     document.querySelector(`.${reference}`).style.filter = "none";

@@ -68,6 +68,8 @@ const Navbar = () => {
       reference = "shop-detail";
     } else if (reference === "shop") {
       reference = "detail-main";
+    }else if (reference === "orders") {
+      reference = "manageOrders";
     }
     document.querySelector(".CheckCart").style.right = "0";
     document.querySelector(`.${reference}`).style.filter = "blur(5px)";

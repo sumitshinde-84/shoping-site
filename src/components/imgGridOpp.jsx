@@ -5,10 +5,18 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "./style/imgGridOpp.css";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ImgGridOpp = () => {
   gsap.registerPlugin(ScrollTrigger);
   const imgGridOppRef = useRef(null);
+ 
+  const navigator = useNavigate();
+
+
+  const handleNavigate = ()=>{
+      navigator('/Product')
+  }
 
   useEffect(() => {
     const scrollBarSmooth = gsap.timeline({
@@ -54,6 +62,7 @@ const ImgGridOpp = () => {
           laudantium architecto impedit asperiores? Nostrum ducimus ipsam a
           numquam omnis iste nam ut?
         </p>
+        <button onClick={handleNavigate} className="imgGridOpp-Btn">Product</button>
       </div>
     </div>
   );
