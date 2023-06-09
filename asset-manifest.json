@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shoping-site/static/css/main.f2a927b1.css",
-    "main.js": "/shoping-site/static/js/main.f29a3ee5.js",
+    "main.css": "/shoping-site/static/css/main.d3764ed1.css",
+    "main.js": "/shoping-site/static/js/main.cde6ac5c.js",
     "static/media/video2.webm": "/shoping-site/static/media/video2.ff4df2db23c072094a6f.webm",
     "static/media/vedio1.webm": "/shoping-site/static/media/vedio1.a9dc7e1e33f4b0b78177.webm",
     "static/media/man.jpg": "/shoping-site/static/media/man.a2b0a440c311e50ebb35.jpg",
@@ -9,8 +9,11 @@
     "static/media/shoes-parts.png": "/shoping-site/static/media/shoes-parts.e62edcade8c0d43a7546.png",
     "static/media/horizontal.png": "/shoping-site/static/media/horizontal.926ceb770a03ca78e29e.png",
     "static/media/home-sneaker.png": "/shoping-site/static/media/home-sneaker.46b6aa7da28da7da5c80.png",
+    "static/media/member1.jpeg": "/shoping-site/static/media/member1.a6e584531e81467d066d.jpeg",
     "static/media/shoes_horizontal_verticle.png": "/shoping-site/static/media/shoes_horizontal_verticle.6cbbf5e9052eb613a98b.png",
+    "static/media/member2.jpeg": "/shoping-site/static/media/member2.20a4c94f02d79a9aff09.jpeg",
     "static/media/App.png": "/shoping-site/static/media/App.a165de6607c3a86d18f6.png",
+    "static/media/member3.jpeg": "/shoping-site/static/media/member3.c1f58c8d5fbb5567c0f7.jpeg",
     "static/media/loader.gif": "/shoping-site/static/media/loader.569d103e661c903ead10.gif",
     "static/media/planeGrid.jpeg": "/shoping-site/static/media/planeGrid.0b06de798a35fa9f1c95.jpeg",
     "static/media/mrbeast.svg": "/shoping-site/static/media/mrbeast.59e38fb2506d15d6a0c1df9c2b7c2042.svg",
@@ -23,11 +26,11 @@
     "static/media/forbes.svg": "/shoping-site/static/media/forbes.72bf8353b1e4e83f5c1f790e17281702.svg",
     "index.html": "/shoping-site/index.html",
     "static/media/3m.svg": "/shoping-site/static/media/3m.d7acabe2e895350e0b3c8ffe411de55c.svg",
-    "main.f2a927b1.css.map": "/shoping-site/static/css/main.f2a927b1.css.map",
-    "main.f29a3ee5.js.map": "/shoping-site/static/js/main.f29a3ee5.js.map"
+    "main.d3764ed1.css.map": "/shoping-site/static/css/main.d3764ed1.css.map",
+    "main.cde6ac5c.js.map": "/shoping-site/static/js/main.cde6ac5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2a927b1.css",
-    "static/js/main.f29a3ee5.js"
+    "static/css/main.d3764ed1.css",
+    "static/js/main.cde6ac5c.js"
   ]
 }
