@@ -1,0 +1,14 @@
+.ourMessage{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourMessage h2{
+    font-size: 35px;
+    width: 600px;
+    text-align: center;
+}
