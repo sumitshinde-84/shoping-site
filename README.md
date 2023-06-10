@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Shoping Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to our Shopping Site, a modern and stylish website dedicated to selling shoes. Developed with the latest technology and industry best practices, our platform offers a seamless experience for browsing, purchasing, and managing orders. Create an account, explore our wide selection of shoes, and easily place your orders. 
 
-## Available Scripts
+## Live demo [Here](https://sumitshinde-84.github.io/shoping-site/)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- User Registration: Users can sign up for an account.
+- User Login: - User can log in to his account with crediationals.
+- User Logout: - User can log out to his account.
+- place Order: -User can place order with multiple products.
+- order track: - User can track order .
+- Error Handling: Proper validation and error handling are implemented to provide a smooth user experience.
+- Amazing User experience: website have amzing graphics , images and animations.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js: A JavaScript runtime environment used for server-side development.
+- Express.js: A web application framework for Node.js used to build the server-side logic.
+- MongoDB: A NoSQL database used to store user and message data.
+- Mongoose: An Object Data Modeling (ODM) library for MongoDB used to interact with the database.
+- Gsap : - An javascript animation library .
+- 
+## Installation
 
-### `npm test`
+1. Clone the repository: `git clone <repository-url>`
+2. Install the dependencies: `npm install`
+3. Set up the MongoDB connection: Update the MongoDB connection string in the `.env` file.
+4. Start the server: `npm start`
+5. Open your web browser and access the application at `http://localhost:3000`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
