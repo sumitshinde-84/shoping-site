@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/shoping-site/static/css/main.d3764ed1.css",
-    "main.js": "/shoping-site/static/js/main.cde6ac5c.js",
+    "main.css": "/shoping-site/static/css/main.7f24d8dd.css",
+    "main.js": "/shoping-site/static/js/main.09f31fbe.js",
     "static/media/video2.webm": "/shoping-site/static/media/video2.ff4df2db23c072094a6f.webm",
     "static/media/vedio1.webm": "/shoping-site/static/media/vedio1.a9dc7e1e33f4b0b78177.webm",
     "static/media/man.jpg": "/shoping-site/static/media/man.a2b0a440c311e50ebb35.jpg",
     "static/media/horizontalLight.jpg": "/shoping-site/static/media/horizontalLight.a6e5116e48b88fb3bd8b.jpg",
     "static/media/shoes-parts.png": "/shoping-site/static/media/shoes-parts.e62edcade8c0d43a7546.png",
     "static/media/horizontal.png": "/shoping-site/static/media/horizontal.926ceb770a03ca78e29e.png",
+    "static/media/founders.jpg": "/shoping-site/static/media/founders.fdae337ef3fef539a0ba.jpg",
     "static/media/home-sneaker.png": "/shoping-site/static/media/home-sneaker.46b6aa7da28da7da5c80.png",
     "static/media/member1.jpeg": "/shoping-site/static/media/member1.a6e584531e81467d066d.jpeg",
     "static/media/shoes_horizontal_verticle.png": "/shoping-site/static/media/shoes_horizontal_verticle.6cbbf5e9052eb613a98b.png",
@@ -26,11 +27,11 @@
     "static/media/forbes.svg": "/shoping-site/static/media/forbes.72bf8353b1e4e83f5c1f790e17281702.svg",
     "index.html": "/shoping-site/index.html",
     "static/media/3m.svg": "/shoping-site/static/media/3m.d7acabe2e895350e0b3c8ffe411de55c.svg",
-    "main.d3764ed1.css.map": "/shoping-site/static/css/main.d3764ed1.css.map",
-    "main.cde6ac5c.js.map": "/shoping-site/static/js/main.cde6ac5c.js.map"
+    "main.7f24d8dd.css.map": "/shoping-site/static/css/main.7f24d8dd.css.map",
+    "main.09f31fbe.js.map": "/shoping-site/static/js/main.09f31fbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3764ed1.css",
-    "static/js/main.cde6ac5c.js"
+    "static/css/main.7f24d8dd.css",
+    "static/js/main.09f31fbe.js"
   ]
 }
