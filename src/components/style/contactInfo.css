@@ -1,0 +1,41 @@
+.contact-info{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+
+}
+
+.contact-info h1{
+    font-size: 45px;
+    width: 500px;
+    text-align: center;
+}
+
+.contact-info .details{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100vh;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.contact-info .details .first p:first-child{
+    font-size: 18px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.contact-info p{
+    font-size: 18px;
+}
+
+.details > div p:last-child{
+    text-decoration: underline;
+    color: blueviolet;
+}
