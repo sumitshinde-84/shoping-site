@@ -24,7 +24,7 @@ https://github.com/sumitshinde-84/shoping-site/assets/110285294/c5ca79b6-136f-4d
 - Mongoose: An Object Data Modeling (ODM) library for MongoDB used to interact with the database.
 - Redux : An State Management tool for manage state efficiently. 
 - Gsap :  An javascript animation library .
-- 
+
 ## Installation
 
 1. Clone the repository: `git clone <repository-url>`
