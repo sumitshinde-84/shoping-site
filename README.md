@@ -22,7 +22,8 @@ https://github.com/sumitshinde-84/shoping-site/assets/110285294/c5ca79b6-136f-4d
 - Express.js: A web application framework for Node.js used to build the server-side logic.
 - MongoDB: A NoSQL database used to store user and message data.
 - Mongoose: An Object Data Modeling (ODM) library for MongoDB used to interact with the database.
-- Gsap : - An javascript animation library .
+- Redux : An State Management tool for manage state efficiently. 
+- Gsap :  An javascript animation library .
 - 
 ## Installation
 
