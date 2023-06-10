@@ -4,6 +4,8 @@ Welcome to our Shopping Site, a modern and stylish website dedicated to selling 
 
 ## Live demo [Here](https://sumitshinde-84.github.io/shoping-site/)
 
+https://github.com/sumitshinde-84/shoping-site/assets/110285294/c5ca79b6-136f-4dc3-b07f-c6a6d30dc784
+
 ## Features
 
 - User Registration: Users can sign up for an account.
