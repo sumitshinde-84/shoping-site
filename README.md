@@ -15,21 +15,18 @@ https://github.com/sumitshinde-84/shoping-site/assets/110285294/c5ca79b6-136f-4d
 - order track: - User can track order .
 - Error Handling: Proper validation and error handling are implemented to provide a smooth user experience.
 - Amazing User experience: website have amzing graphics , images and animations.
+- backend integration - our shoping integrated with our inventry management system ( powerfull backend).
 
 ## Technologies Used
 
-- Node.js: A JavaScript runtime environment used for server-side development.
-- Express.js: A web application framework for Node.js used to build the server-side logic.
-- MongoDB: A NoSQL database used to store user and message data.
-- Mongoose: An Object Data Modeling (ODM) library for MongoDB used to interact with the database.
-- Redux : An State Management tool for manage state efficiently. 
-- Gsap :  An javascript animation library .
+- React js: A JavaScript frontend library.
+- Gsap - an Javascript animation library.
+- redux - an  powerfull statemanagement library
 
 ## Installation
 
 1. Clone the repository: `git clone <repository-url>`
 2. Install the dependencies: `npm install`
-3. Set up the MongoDB connection: Update the MongoDB connection string in the `.env` file.
 4. Start the server: `npm start`
 5. Open your web browser and access the application at `http://localhost:3000`
 
