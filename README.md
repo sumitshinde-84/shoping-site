@@ -2,7 +2,7 @@
 
 Welcome to our Shopping Site, a modern and stylish website dedicated to selling shoes. Developed with the latest technology and industry best practices, our platform offers a seamless experience for browsing, purchasing, and managing orders. Create an account, explore our wide selection of shoes, and easily place your orders.
 
-#Note : - currently this project is desktop supported only .
+## Note : - currently this project is desktop supported only .
 
 ## Live Demo
 
